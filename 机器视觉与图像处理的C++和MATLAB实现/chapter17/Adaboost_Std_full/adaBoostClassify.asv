@@ -1,0 +1,26 @@
+function classLabel = adaBoostClassify( Data, CABoosted, nWL )
+% Input:
+%      Data - 待分类数据矩阵，每行一个样本
+%      CABoosted - CellArray 类型，记录着每个若分类器的相关信息
+%      nWL - 弱分类器的数量
+% Output:
+%      classLabel - Data的类标号
+
+
+[m n] = size(Data);
+
+sum = zeros(m, 1);
+
+for iWL = 1:nW
+    WL = CABoosted{iWL}.WL;
+    alfa = CABoosted{iWL}.alfa;
+    pRes = Data(:, WL.iFeature) >= WL.thres;
+    nRes = Data(:, WL.iFeature) < WL.thres;
+    nRes = -1 * nRes;
+    res = pRes + nRes;
+
+    sum = sum + alfa * res;
+end
+
+label = (sum >= 0);
+

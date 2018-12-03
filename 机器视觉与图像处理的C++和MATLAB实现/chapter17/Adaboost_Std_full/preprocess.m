@@ -1,0 +1,6 @@
+load faces.mat
+
+faces_small = imresize(faces, [51, 750], 'bilinear');
+new_faces_small = imresize(faces, [27, 750], 'bilinear');
+
+save('faces_small.mat', 'faces_small', 'new_faces_small', 'faces_label', 'new_label');

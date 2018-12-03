@@ -1,0 +1,66 @@
+﻿生成启动时间为 2013/5/21 13:58:22。
+     1>项目“F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\disk\DIPDemo_vs20102012\DIPDemo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Release\DIPDemo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MainFrm.cpp
+         MainFrm.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\DIPDemo.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:".\Release\DIPDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\disk\DIPDemo_vs20102012\Release\DIPDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\DIPDemo.lib" /MACHINE:X86 .\Release\DIPDemo.res
+         .\Release\cDlgMorphClose.obj
+         .\Release\cDlgMorphDilation.obj
+         .\Release\cDlgMorphErosion.obj
+         .\Release\cDlgMorphOpen.obj
+         .\Release\ChildFrm.obj
+         .\Release\DIPDemo.obj
+         .\Release\DIPDemoDoc.obj
+         .\Release\DIPDemoView.obj
+         .\Release\DlgArith.obj
+         .\Release\DlgColor.obj
+         .\Release\DlgDCT.obj
+         .\Release\DlgEdgeSobelPrewitt.obj
+         .\Release\DlgFreqGaussBRF.obj
+         .\Release\DlgFreqGaussHPF.obj
+         .\Release\DlgFreqGaussLPF.obj
+         .\Release\DlgFreqIdealLPF.obj
+         .\Release\DlgGamma.obj
+         .\Release\DlgGeoRota.obj
+         .\Release\DlgGeoTran.obj
+         .\Release\DlgGeoZoom.obj
+         .\Release\DlgGrayScaling.obj
+         .\Release\DlgHist.obj
+         .\Release\DlgHough.obj
+         .\Release\DlgHuffman.obj
+         .\Release\DlgInvFilter.obj
+         .\Release\DlgLinerPara.obj
+         .\Release\DlgLinTrans.obj
+         .\Release\DlgLog.obj
+         .\Release\DlgMidFilter.obj
+         .\Release\DlgMorph.obj
+         .\Release\DlgPointThre.obj
+         .\Release\DlgPointWin.obj
+         .\Release\DlgProjRestore.obj
+         .\Release\DlgSharpThre.obj
+         .\Release\DlgSmooth.obj
+         .\Release\DlgWndTran.obj
+         .\Release\Huffman.obj
+         .\Release\Img.obj
+         .\Release\ImgProcess.obj
+         .\Release\MainFrm.obj
+         .\Release\StdAfx.obj
+         .\Release\Vector2D.obj
+         DIPDemo.vcxproj -> F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\disk\DIPDemo_vs20102012\.\Release\DIPDemo.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\Release\DIPDemo.exe;#1" /manifest .\Release\DIPDemo.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“.\Release\DIPDemo.unsuccessfulbuild”。
+         正在对“.\Release\DIPDemo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\disk\DIPDemo_vs20102012\DIPDemo.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.35

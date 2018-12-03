@@ -1,0 +1,94 @@
+﻿生成启动时间为 2013/5/21 14:19:08。
+     1>项目“F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\final\2nd Edition\disk\chapter15\DigitRec_vs2012\DigitRec.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Release\DigitRec.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Release\DigitRec.pch" /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>f:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\diprec\final\2nd edition\disk\chapter15\digitrec_vs2012\./OCRImageProcess/Img.h(194): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>f:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\diprec\final\2nd edition\disk\chapter15\digitrec_vs2012\./OCRImageProcess/ImgProcess.h(96): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>f:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\diprec\final\2nd edition\disk\chapter15\digitrec_vs2012\./OCRImageProcess/ImgProcess.h(109): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release\DigitRec.pch" /Fo".\Release\\" /Fd".\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DigitRec.cpp DigitRecDoc.cpp DigitRecView.cpp OCRImageProcess\Img.cpp OCRImageProcess\ImgProcess.cpp MainFrm.cpp neuralnet\NeuralData.cpp neuralnet\neuralnet.cpp OCRImageProcess\OCRImgProcess.cpp PreprocessDlg.cpp TestDialog.cpp TrainDlg.cpp neuralnet\ValueTrack.cpp OCRImageProcess\Vector2D.cpp
+         DigitRec.cpp
+     1>DigitRec.cpp(60): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(5344) : 参见“CWinApp::Enable3dControls”的声明
+         DigitRecDoc.cpp
+         DigitRecView.cpp
+     1>DigitRecView.cpp(122): warning C4018: “<”: 有符号/无符号不匹配
+     1>DigitRecView.cpp(235): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>DigitRecView.cpp(296): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+         Img.cpp
+     1>OCRImageProcess\Img.cpp(842): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\Img.cpp(888): warning C4244: “初始化”: 从“double”转换到“BYTE”，可能丢失数据
+         ImgProcess.cpp
+     1>OCRImageProcess\ImgProcess.cpp(748): warning C4244: “=”: 从“double”转换到“BYTE”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(1020): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(1685): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(1707): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(1715): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(1811): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(2538): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(2539): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(3617): warning C4244: “=”: 从“double”转换到“BYTE”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(3618): warning C4244: “=”: 从“double”转换到“BYTE”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(3624): warning C4244: “=”: 从“double”转换到“BYTE”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(3781): warning C4244: “=”: 从“long”转换到“BYTE”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(3933): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(3978): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(4079): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(4133): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>OCRImageProcess\ImgProcess.cpp(5102): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+         MainFrm.cpp
+         NeuralData.cpp
+     1>neuralnet\NeuralData.cpp(122): warning C4018: “<”: 有符号/无符号不匹配
+         neuralnet.cpp
+     1>neuralnet\neuralnet.cpp(275): warning C4018: “<”: 有符号/无符号不匹配
+     1>neuralnet\neuralnet.cpp(493): warning C4018: “<”: 有符号/无符号不匹配
+         OCRImgProcess.cpp
+         PreprocessDlg.cpp
+         TestDialog.cpp
+     1>TestDialog.cpp(88): warning C4244: “初始化”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+         TrainDlg.cpp
+     1>TrainDlg.cpp(337): warning C4018: “<”: 有符号/无符号不匹配
+     1>TrainDlg.cpp(403): warning C4244: “初始化”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+         ValueTrack.cpp
+     1>neuralnet\ValueTrack.cpp(152): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>neuralnet\ValueTrack.cpp(157): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>neuralnet\ValueTrack.cpp(162): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>neuralnet\ValueTrack.cpp(167): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+         Vector2D.cpp
+     1>OCRImageProcess\Vector2D.cpp(145): warning C4018: “<”: 有符号/无符号不匹配
+     1>OCRImageProcess\Vector2D.cpp(160): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0804" /nologo /fo".\Release\DigitRec.res" DigitRec.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\DigitRec.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:".\Release\DigitRec.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\final\2nd Edition\disk\chapter15\DigitRec_vs2012\Release\DigitRec.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\DigitRec.lib" /MACHINE:X86 .\Release\DigitRec.res
+         .\Release\DigitRec.obj
+         .\Release\DigitRecDoc.obj
+         .\Release\DigitRecView.obj
+         .\Release\Img.obj
+         .\Release\ImgProcess.obj
+         .\Release\MainFrm.obj
+         .\Release\NeuralData.obj
+         .\Release\neuralnet.obj
+         .\Release\OCRImgProcess.obj
+         .\Release\PreprocessDlg.obj
+         .\Release\StdAfx.obj
+         .\Release\TestDialog.obj
+         .\Release\TrainDlg.obj
+         .\Release\ValueTrack.obj
+         .\Release\Vector2D.obj
+         DigitRec.vcxproj -> F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\final\2nd Edition\disk\chapter15\DigitRec_vs2012\.\Release\DigitRec.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\Release\DigitRec.exe;#1" /manifest .\Release\DigitRec.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“.\Release\DigitRec.unsuccessfulbuild”。
+         正在对“.\Release\DigitRec.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\金羽图书\人民邮电\数字图像处理与机器视觉(第2版)\DIPREC\final\2nd Edition\disk\chapter15\DigitRec_vs2012\DigitRec.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:09.44

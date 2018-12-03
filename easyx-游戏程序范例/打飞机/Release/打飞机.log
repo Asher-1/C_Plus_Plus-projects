@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  打飞机.cpp
+g:\develop\c++projects\easyx-游戏程序范例\打飞机\打飞机.cpp(182): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码
+  All 279 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  打飞机.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\Release\打飞机.exe

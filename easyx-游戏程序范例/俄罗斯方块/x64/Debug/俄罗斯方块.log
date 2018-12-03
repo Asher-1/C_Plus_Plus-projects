@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  俄罗斯方块.cpp
+g:\develop\c++projects\easyx-游戏程序范例\俄罗斯方块\俄罗斯方块.cpp(100): warning C4326: “main”的返回类型应为“int”而非“void”
+  俄罗斯方块.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\x64\Debug\俄罗斯方块.exe

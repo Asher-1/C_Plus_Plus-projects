@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  打飞机.cpp
+g:\develop\c++projects\easyx-游戏程序范例\打飞机\打飞机.cpp(174): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\打飞机\打飞机.cpp(174): note: 尝试匹配参数列表“(int, int, char [25])”时
+g:\develop\c++projects\easyx-游戏程序范例\打飞机\打飞机.cpp(182): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+g:\develop\c++projects\easyx-游戏程序范例\打飞机\打飞机.cpp(307): error C2664: “int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)”: 无法将参数 2 从“LPCSTR”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\打飞机\打飞机.cpp(307): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换

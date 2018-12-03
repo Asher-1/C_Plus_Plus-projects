@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="opengl">
+      <UniqueIdentifier>{cb9db1c4-063d-454b-910e-61b15c8f3595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockingBar">
+      <UniqueIdentifier>{b3ca09fd-7c8d-49fc-9081-34e196c36ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trimesh">
+      <UniqueIdentifier>{e31d9410-886e-4615-9d1c-b3e268bad5f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trimesh\头文件">
+      <UniqueIdentifier>{e881e2a2-852f-4ef5-b505-f132f069b02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trimesh\源文件">
+      <UniqueIdentifier>{6c27fe4a-d3bc-4969-a991-4f1c53f41a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CButtonST">
+      <UniqueIdentifier>{13d056b8-4be6-4c4d-a1b1-7dfc36639f20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FeatureReuse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureReuseDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureReuseView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParserVrml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl\CadBase.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl\cadbase1.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl\Camera.CPP">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl\GLView.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl\OpenGLDC.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\scbarcf.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\scbarg.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\sizecbar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ViewBar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\conn_comps.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\diffuse.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\edgeflip.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\faceflip.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\filter.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\ICP.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\KDtree.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\lmsmooth.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\mesh_check.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\mesh_crunch.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\mesh_hf.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\mesh_shade.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\remove.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\remove_outliers.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\reorder_verts.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\subdiv.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_bounding.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_connectivity.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_curvature.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_grid.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_io.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_normals.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_pointareas.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_stats.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trimesh\src\TriMesh_tstrips.cpp">
+      <Filter>Trimesh\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl\jxglTracker.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="TriChip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="predicates.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tetgen.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Section.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CButtonST\BCMenu.cpp">
+      <Filter>CButtonST</Filter>
+    </ClCompile>
+    <ClCompile Include="CButtonST\BtnST.cpp">
+      <Filter>CButtonST</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="memwatch.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FeatureReuse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureReuseDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureReuseView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParserVrml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\CadBase.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\Camera.H">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\OpenGLDC.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\scbarcf.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\scbarg.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\sizecbar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ViewBar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="trimesh\include\ICP.h">
+      <Filter>Trimesh\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trimesh\include\KDtree.h">
+      <Filter>Trimesh\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trimesh\include\TriMesh.h">
+      <Filter>Trimesh\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trimesh\include\TriMesh_algo.h">
+      <Filter>Trimesh\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trimesh\include\XForm.h">
+      <Filter>Trimesh\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\freeglut.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\freeglut_ext.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\freeglut_std.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\jxglTracker.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\memdc.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl\shitu.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="TriChip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tetgen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Section.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CButtonST\BCMenu.h">
+      <Filter>CButtonST</Filter>
+    </ClInclude>
+    <ClInclude Include="CButtonST\BtnST.h">
+      <Filter>CButtonST</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanner.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="memwatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\FeatureReuse.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\FeatureReuseDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tb_displ.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ToolbarDummy.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ToolbarDraw.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ToolbarDrawHot.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ToolbarDrawDisabled.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FeatureReuse.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FeatureReuse.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Enter a file name" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

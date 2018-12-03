@@ -1,0 +1,5 @@
+﻿  别踩白块-双人版.cpp
+g:\develop\c++projects\easyx-游戏程序范例\别踩白块-双人版\别踩白块-双人版.cpp(389): warning C4244: “=”: 从“__int64”转换到“byte”，可能丢失数据
+g:\develop\c++projects\easyx-游戏程序范例\别踩白块-双人版\别踩白块-双人版.cpp(439): warning C4326: “main”的返回类型应为“int”而非“void”
+别踩白块-双人版.obj : error LNK2019: 无法解析的外部符号 "void __cdecl outtextxy(int,int,wchar_t)" (?outtextxy@@YAXHH_W@Z)，该符号在函数 "private: void __cdecl PLAYER::OutTextXY(int,int,char)" (?OutTextXY@PLAYER@@AEAAXHHD@Z) 中被引用
+G:\develop\c++Projects\easyx-游戏程序范例\x64\Debug\别踩白块-双人版.exe : fatal error LNK1120: 1 个无法解析的外部命令

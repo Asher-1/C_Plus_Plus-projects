@@ -1,0 +1,4 @@
+﻿  OpenGLDC.cpp
+g:\develop\c++projects\glcontext\glcontext\opengldc.cpp(610): warning C4101: “viewport”: 未引用的局部变量
+  glContext.vcxproj -> G:\develop\c++Projects\glContext\Debug\glContext.dll
+  glContext.vcxproj -> G:\develop\c++Projects\glContext\Debug\glContext.pdb (Full PDB)

@@ -1,0 +1,19 @@
+﻿  STLViewerDoc.cpp
+g:\develop\c++projects\stlviewer\stlviewer\tetgen.h(22): warning C4005: “PI”: 宏重定义
+  g:\develop\c++projects\stlviewer\inc\geomcalc\cadbase.h(12): note: 参见“PI”的前一个定义
+  正在生成代码...
+  正在编译...
+  STLViewerView.cpp
+g:\develop\c++projects\stlviewer\stlviewer\tetgen.h(22): warning C4005: “PI”: 宏重定义
+  g:\develop\c++projects\stlviewer\inc\geomcalc\cadbase.h(12): note: 参见“PI”的前一个定义
+g:\develop\c++projects\stlviewer\inc\glcontext\camera.h(23): warning C4005: “ZOOM_IN”: 宏重定义
+  c:\program files (x86)\microsoft visual studio 14.0\vc\atlmfc\include\afxpriv.h(475): note: 参见“ZOOM_IN”的前一个定义
+g:\develop\c++projects\stlviewer\inc\glcontext\camera.h(24): warning C4005: “ZOOM_OUT”: 宏重定义
+  c:\program files (x86)\microsoft visual studio 14.0\vc\atlmfc\include\afxpriv.h(473): note: 参见“ZOOM_OUT”的前一个定义
+g:\develop\c++projects\stlviewer\stlviewer\stlviewerview.cpp(111): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  正在跳过...(未检测到相关更改)
+  STLViewerHandlers.cpp
+    正在创建库 G:\develop\c++Projects\STLViewer\Debug\STLViewerHandlers.lib 和对象 G:\develop\c++Projects\STLViewer\Debug\STLViewerHandlers.exp
+STLViewerView.obj : error LNK2001: 无法解析的外部符号 "public: static int CMainFrame::m_Model" (?m_Model@CMainFrame@@2HA)
+G:\develop\c++Projects\STLViewer\Debug\STLViewerHandlers.dll : fatal error LNK1120: 1 个无法解析的外部命令

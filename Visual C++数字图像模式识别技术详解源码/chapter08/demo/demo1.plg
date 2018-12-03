@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: demo1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/demo1.res" /d "_DEBUG" /d "_AFXDLL" "D:\research\book\µÚ¶þ°æ\src\chapter08\demo\demo1.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP262.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/demo1.pdb" /debug /machine:I386 /out:"Debug/demo1.exe" /pdbtype:sept 
+".\Debug\ChildFrm.obj"
+".\Debug\demo1.obj"
+".\Debug\demo1Doc.obj"
+".\Debug\demo1View.obj"
+".\Debug\FeatureDetect.obj"
+".\Debug\FourierTrans.obj"
+".\Debug\GeometryMoveDlg.obj"
+".\Debug\GeometryTrans.obj"
+".\Debug\GrayTrans.obj"
+".\Debug\HistogramDrawDlg.obj"
+".\Debug\HistSegmentDlg.obj"
+".\Debug\ImageDib.obj"
+".\Debug\ImageEnhance.obj"
+".\Debug\ImageFreqEnhance.obj"
+".\Debug\ImgSegment.obj"
+".\Debug\LinearStepParamDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MedianSmoothDlg.obj"
+".\Debug\ModelBuildResult.obj"
+".\Debug\Morphology.obj"
+".\Debug\NeiAverSmoothDlg.obj"
+".\Debug\RotateDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StrechWindowDlg.obj"
+".\Debug\TextureResult.obj"
+".\Debug\ThreshStrechDlg.obj"
+".\Debug\WaveletTrans.obj"
+".\Debug\Zoomdlg.obj"
+".\Debug\demo1.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP262.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+demo1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

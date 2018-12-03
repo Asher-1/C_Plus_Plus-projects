@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="资源文件\关卡">
+      <UniqueIdentifier>{365f85fc-aab3-4e83-9fe4-887e9e25ba69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\图片">
+      <UniqueIdentifier>{2d5335fd-7eff-4881-adb3-66c42d05dc62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="华容道.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="关卡\关卡1.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡2.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡3.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡4.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡5.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡6.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡7.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡8.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡9.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡10.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡11.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+    <None Include="关卡\关卡12.map">
+      <Filter>资源文件\关卡</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="图片\边缘.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\兵.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\菜单.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\曹操.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\地图菜单.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\关于游戏.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\关羽.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\黄忠.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\空.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\马超.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\胜利.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\游戏帮助.bmp">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\游戏界面.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\张飞.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+    <Image Include="图片\赵云.jpg">
+      <Filter>资源文件\图片</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="资源.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="游戏说明.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

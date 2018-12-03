@@ -1,0 +1,3 @@
+
+void *GutLoadBinaryStream(const char *filename, unsigned int *size = NULL);
+void GutReleaseBinaryStream(void *buffer);

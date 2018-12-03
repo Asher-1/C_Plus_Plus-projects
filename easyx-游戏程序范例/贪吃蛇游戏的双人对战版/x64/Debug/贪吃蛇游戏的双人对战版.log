@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  贪吃蛇游戏的双人对战版.cpp
+g:\develop\c++projects\easyx-游戏程序范例\贪吃蛇游戏的双人对战版\贪吃蛇游戏的双人对战版.cpp(262): warning C4326: “main”的返回类型应为“int”而非“void”
+  贪吃蛇游戏的双人对战版.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\x64\Debug\贪吃蛇游戏的双人对战版.exe

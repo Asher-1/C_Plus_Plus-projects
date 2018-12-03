@@ -1,0 +1,13 @@
+﻿  stdafx.cpp
+  大战黑帮.cpp
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(8): warning C4326: “main”的返回类型应为“int”而非“void”
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(82): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(187): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(192): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(414): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(415): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明

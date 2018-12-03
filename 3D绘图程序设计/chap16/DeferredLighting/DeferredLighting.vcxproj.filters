@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{4b5578cc-e55e-45ea-b6e8-57b4797330d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_dx10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_dx9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render_opengl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="render_data.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render_dx10.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render_dx9.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render_opengl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\shaders\DeferredLighting_Final.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\DeferredLighting_Final_dx10.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\DeferredLighting_Prepare.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\DeferredLighting_Prepare_dx10.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\Posteffect.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\shaders\Posteffect_dx10.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\shaders\DeferredLighting_Final.glfs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\..\shaders\DeferredLighting_Final.glvs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\..\shaders\DeferredLighting_Prepare.glfs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\..\shaders\DeferredLighting_Prepare.glvs">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>

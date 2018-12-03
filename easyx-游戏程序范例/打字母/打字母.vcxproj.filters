@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="资源文件\music">
+      <UniqueIdentifier>{3f47121c-c73d-499e-a6ef-839f433dd359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\image">
+      <UniqueIdentifier>{f099e824-5520-44d8-bca8-7b208f5d9b12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cla_LivingThings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cla_PlayLetter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cla_LivingThings.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cla_PlayLetter.cxx">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cla_PlayLetter_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\music\RunGame_QuickStatus.mp3">
+      <Filter>资源文件\music</Filter>
+    </Media>
+    <Media Include="res\music\RunGame_SlowStatus.mp3">
+      <Filter>资源文件\music</Filter>
+    </Media>
+    <Media Include="res\music\WelcomeGame_BK.mp3">
+      <Filter>资源文件\music</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\image\Carota.jpg">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\image\Carota_Zhao.jpg">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\image\RunGame_BK.jpg">
+      <Filter>资源文件\image</Filter>
+    </Image>
+    <Image Include="res\image\WelcomeGame_BK.jpg">
+      <Filter>资源文件\image</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

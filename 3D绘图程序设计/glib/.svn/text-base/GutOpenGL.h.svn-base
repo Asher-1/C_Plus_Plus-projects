@@ -1,0 +1,16 @@
+#ifndef _GUTOPENGL_
+#define _GUTOPENGL_
+
+#pragma comment(lib, "opengl32.lib")
+#pragma comment(lib, "glu32.lib")
+
+bool GutInitGraphicsDeviceOpenGL(void);
+bool GutReleaseGraphicsDeviceOpenGL(void);
+void GutSwapBuffersOpenGL(void);
+
+GLuint GutLoadVertexProgramOpenGL_ASM(const char *filename);
+GLuint GutLoadFragmentProgramOpenGL_ASM(const char *filename);
+void GutReleaseVertexProgramOpenGL(GLuint shader_id);
+void GutReleasePixelProgramOpenGL(GLuint shader_id);
+
+#endif // _GUTOPENGL_

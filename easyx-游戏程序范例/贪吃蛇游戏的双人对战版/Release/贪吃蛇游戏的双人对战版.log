@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  贪吃蛇游戏的双人对战版.cpp
+g:\develop\c++projects\easyx-游戏程序范例\贪吃蛇游戏的双人对战版\贪吃蛇游戏的双人对战版.cpp(262): warning C4326: “main”的返回类型应为“int”而非“void”
+  正在生成代码
+  4 of 109 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  贪吃蛇游戏的双人对战版.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\Release\贪吃蛇游戏的双人对战版.exe

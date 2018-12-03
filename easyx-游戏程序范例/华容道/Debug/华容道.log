@@ -1,0 +1,103 @@
+﻿  stdafx.cpp
+  华容道.cpp
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(71): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(94): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1197): note: 参见“fscanf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(100): error C2872: “empty”: 不明确的符号
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(15): note: 可能是“IMAGE empty”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(100): note: 或  “empty”
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(100): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(100): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [6])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(101): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(101): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(102): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(102): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [7])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(103): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(103): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [3])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(104): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(104): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [3])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(105): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(105): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [3])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(106): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(106): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [3])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(107): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(107): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [3])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(108): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(108): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [3])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(109): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(109): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [8])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(110): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(110): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(111): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(111): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [8])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(112): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(112): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [8])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(113): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(113): note: 尝试匹配参数列表“(IMAGE *, const char [6], const char [4])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(297): error C2664: “HWND FindWindowW(LPCWSTR,LPCWSTR)”: 无法将参数 2 从“const char [19]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(297): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(304): error C2664: “BOOL SetWindowTextW(HWND,LPCWSTR)”: 无法将参数 2 从“const char [19]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(304): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(535): error C2872: “empty”: 不明确的符号
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(15): note: 可能是“IMAGE empty”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(535): note: 或  “empty”
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(558): error C2872: “empty”: 不明确的符号
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(15): note: 可能是“IMAGE empty”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(558): note: 或  “empty”
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(559): error C2872: “empty”: 不明确的符号
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(15): note: 可能是“IMAGE empty”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(559): note: 或  “empty”
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(562): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(562): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(563): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(563): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(564): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(564): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(565): error C2665: “textwidth”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(233): note: 可能是“int textwidth(TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(232): note: 或    “int textwidth(LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(565): note: 尝试匹配参数列表“(const char [7])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(567): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(567): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(570): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(570): note: 尝试匹配参数列表“(int, int, char [9])”时
+g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(571): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\华容道\华容道.cpp(571): note: 尝试匹配参数列表“(int, int, char [11])”时

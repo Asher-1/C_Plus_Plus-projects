@@ -1,0 +1,11 @@
+﻿  Entity.cpp
+g:\develop\c++projects\geomkernel\geomkernel\tetgen.h(38): warning C4005: “PI”: 宏重定义
+  g:\develop\c++projects\geomkernel\inc\geomcalc\cadbase.h(12): note: 参见“PI”的前一个定义
+g:\develop\c++projects\geomkernel\geomkernel\entity.cpp(246): warning C4018: “<”: 有符号/无符号不匹配
+g:\develop\c++projects\geomkernel\geomkernel\entity.cpp(750): warning C4018: “<”: 有符号/无符号不匹配
+g:\develop\c++projects\geomkernel\geomkernel\entity.cpp(776): warning C4018: “<”: 有符号/无符号不匹配
+g:\develop\c++projects\geomkernel\geomkernel\entity.cpp(799): warning C4018: “<”: 有符号/无符号不匹配
+g:\develop\c++projects\geomkernel\geomkernel\entity.cpp(1095): warning C4018: “<”: 有符号/无符号不匹配
+g:\develop\c++projects\geomkernel\geomkernel\entity.cpp(589): warning C4715: “CSTLModel::ReadBinFile”: 不是所有的控件路径都返回值
+  GeomKernel.vcxproj -> G:\develop\c++Projects\GeomKernel\Debug\GeomKernel.dll
+  GeomKernel.vcxproj -> G:\develop\c++Projects\GeomKernel\Debug\GeomKernel.pdb (Full PDB)

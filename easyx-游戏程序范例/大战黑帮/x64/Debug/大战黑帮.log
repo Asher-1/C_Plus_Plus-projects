@@ -1,0 +1,46 @@
+﻿  stdafx.cpp
+  大战黑帮.cpp
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(8): warning C4326: “main”的返回类型应为“int”而非“void”
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(16): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [39]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(16): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(17): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [33]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(17): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(18): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [22]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(18): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(84): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(84): note: 尝试匹配参数列表“(int, int, char [10])”时
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(82): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(106): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(106): note: 尝试匹配参数列表“(int, int, const char [9])”时
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(194): error C2664: “int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)”: 无法将参数 2 从“char [256]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(194): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(187): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(192): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(423): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(423): note: 尝试匹配参数列表“(int, int, char [20])”时
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(424): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(424): note: 尝试匹配参数列表“(int, int, char [20])”时
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(414): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(415): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(447): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(447): note: 尝试匹配参数列表“(IMAGE *, const char [13])”时
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(468): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(468): note: 尝试匹配参数列表“(IMAGE *, const char [14])”时
+g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(489): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\大战黑帮\大战黑帮.cpp(489): note: 尝试匹配参数列表“(IMAGE *, const char [19])”时

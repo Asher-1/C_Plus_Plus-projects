@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  扔香蕉的大猩猩.cpp
+g:\develop\c++projects\easyx-游戏程序范例\扔香蕉的大猩猩\扔香蕉的大猩猩.cpp(64): warning C4326: “main”的返回类型应为“int”而非“void”
+g:\develop\c++projects\easyx-游戏程序范例\扔香蕉的大猩猩\扔香蕉的大猩猩.cpp(153): error C2664: “int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)”: 无法将参数 1 从“TCHAR [20]”转换为“wchar_t *const ”
+  g:\develop\c++projects\easyx-游戏程序范例\扔香蕉的大猩猩\扔香蕉的大猩猩.cpp(153): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换

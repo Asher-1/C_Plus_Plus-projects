@@ -1,0 +1,19 @@
+#ifndef _GUTDX9_
+#define _GUTDX9_
+
+#include <d3d9.h>
+#pragma comment(lib, "d3d9.lib")
+#pragma comment(lib, "d3dx9.lib")
+
+bool GutInitGraphicsDeviceDX9(void);
+bool GutReleaseGraphicsDeviceDX9(void);
+
+LPDIRECT3DVERTEXSHADER9 GutLoadVertexShaderDX9_HLSL(const char *filename, const char *entry, const char *profile);
+LPDIRECT3DPIXELSHADER9  GutLoadPixelShaderDX9_HLSL(const char *filename, const char *entry, const char *profile);
+
+LPDIRECT3DVERTEXSHADER9 GutLoadVertexShaderDX9_Binary(const char *filename);
+LPDIRECT3DPIXELSHADER9  GutLoadPixelShaderDX9_Binary(const char *filename);
+
+LPDIRECT3DDEVICE9 GutGetGraphicsDeviceDX9(void);
+
+#endif // _GUTDX9_

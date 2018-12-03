@@ -1,0 +1,317 @@
+﻿  stdafx.cpp
+  control.cpp
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(47): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(47): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(49): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(49): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(51): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(51): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(53): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(53): note: 尝试匹配参数列表“(const char [11], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(98): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(98): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(101): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(101): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(104): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(104): note: 尝试匹配参数列表“(const char [11], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(123): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(123): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(126): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(126): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(129): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(129): note: 尝试匹配参数列表“(const char [11], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(142): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(142): note: 尝试匹配参数列表“(int, int, const char [9])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(144): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(144): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(145): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(145): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(147): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(147): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(149): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(149): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(151): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(151): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(153): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(153): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(175): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(175): note: 尝试匹配参数列表“(int, int, const char [11])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(176): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(176): note: 尝试匹配参数列表“(int, int, const char [11])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(177): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(177): note: 尝试匹配参数列表“(int, int, const char [13])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(178): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(178): note: 尝试匹配参数列表“(int, int, const char [9])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(179): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(179): note: 尝试匹配参数列表“(int, int, const char [9])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(181): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(181): note: 尝试匹配参数列表“(const char [5], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(189): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(189): note: 尝试匹配参数列表“(int, int, const char [11])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(190): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(190): note: 尝试匹配参数列表“(int, int, const char [10])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(191): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(191): note: 尝试匹配参数列表“(int, int, const char [10])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(192): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(192): note: 尝试匹配参数列表“(int, int, const char [10])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(193): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(193): note: 尝试匹配参数列表“(int, int, const char [14])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(194): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(194): note: 尝试匹配参数列表“(int, int, const char [12])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(196): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(196): note: 尝试匹配参数列表“(const char [5], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(223): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(223): note: 尝试匹配参数列表“(const char [5], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(237): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(237): note: 尝试匹配参数列表“(const char [5], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(258): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(258): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(261): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(261): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(264): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(264): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(267): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(267): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(286): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(286): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(289): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(289): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(292): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(292): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(295): error C2665: “drawtext”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(237): note: 可能是“int drawtext(TCHAR,RECT *,UINT)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(236): note: 或    “int drawtext(LPCTSTR,RECT *,UINT)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(295): note: 尝试匹配参数列表“(const char [9], RECT *, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(311): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(311): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(317): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(317): note: 尝试匹配参数列表“(int, int, char [20])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(314): error C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdlib.h(640): note: 参见“_itoa”的声明
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(315): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(322): error C2665: “settextstyle”: 4 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(254): note: 可能是“void settextstyle(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(322): note: 尝试匹配参数列表“(int, int, const char [5])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(328): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(328): note: 尝试匹配参数列表“(int, int, char [20])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(325): error C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdlib.h(640): note: 参见“_itoa”的声明
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(326): error C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(90): note: 参见“strcat”的声明
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(337): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(337): note: 尝试匹配参数列表“(int, int, char [20])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(338): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(338): note: 尝试匹配参数列表“(int, int, char [2])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(336): error C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdlib.h(640): note: 参见“_itoa”的声明
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(344): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(344): note: 尝试匹配参数列表“(IMAGE *, const char [13], int, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(354): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(354): note: 尝试匹配参数列表“(int, int, char [20])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(355): error C2665: “outtextxy”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(231): note: 可能是“void outtextxy(int,int,TCHAR)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(230): note: 或    “void outtextxy(int,int,LPCTSTR)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(355): note: 尝试匹配参数列表“(int, int, char [2])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(353): error C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdlib.h(640): note: 参见“_itoa”的声明
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(361): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\control.cpp(361): note: 尝试匹配参数列表“(IMAGE *, const char [13], int, int)”时
+  role.cpp
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(32): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(32): note: 尝试匹配参数列表“(IMAGE *, const char [13])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(33): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(33): note: 尝试匹配参数列表“(IMAGE *, const char [12])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(34): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(34): note: 尝试匹配参数列表“(IMAGE *, const char [12])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(35): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(35): note: 尝试匹配参数列表“(IMAGE *, const char [12])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(56): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [36]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(56): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(57): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [33]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(57): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(58): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [35]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(58): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(59): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [38]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(59): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(60): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [44]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(60): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(61): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [37]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(61): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(62): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [39]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(62): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(63): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [44]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(63): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(150): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [24]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(150): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(152): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [23]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(152): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(416): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [23]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(416): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(439): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [24]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(439): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(450): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [23]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(450): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(523): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [25]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(523): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(530): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [25]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(530): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(581): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [23]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(581): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(591): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [28]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(591): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(602): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [23]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\role.cpp(602): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+  rule.cpp
+  scene.cpp
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(10): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(264): note: 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(10): note: 尝试匹配参数列表“(IMAGE *, const char [15], int, int)”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(11): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(11): note: 尝试匹配参数列表“(IMAGE *, const char [12])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(12): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(12): note: 尝试匹配参数列表“(IMAGE *, const char [16])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(13): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(13): note: 尝试匹配参数列表“(IMAGE *, const char [12])”时
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(14): error C2665: “loadimage”: 2 个重载中没有一个可以转换所有参数类型
+  d:\develop\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\easyx.h(263): note: 可能是“void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\scene.cpp(14): note: 尝试匹配参数列表“(IMAGE *, const char [12])”时
+  超级马里奥.cpp
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(27): warning C4326: “main”的返回类型应为“int”而非“void”
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(37): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [37]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(37): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(38): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [34]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(38): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(39): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [40]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(39): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(40): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [38]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(40): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(41): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(41): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(52): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(52): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(57): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(57): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(63): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(63): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(76): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(76): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(88): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [22]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(88): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(95): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(95): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(102): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(102): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(107): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(107): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(110): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [22]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(110): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(112): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [28]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(112): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(119): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(119): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(123): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [22]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(123): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(129): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [21]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(129): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(145): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [10]”转换为“LPCWSTR”
+  g:\develop\c++projects\easyx-游戏程序范例\超级马里奥\超级马里奥.cpp(145): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+  正在生成代码...

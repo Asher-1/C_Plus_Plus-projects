@@ -1,0 +1,170 @@
+
+#include <windows.h>
+
+#include "Gut.h"
+#include "GUtWin32.h"
+
+static HWND g_hWnd = NULL;
+static HINSTANCE g_hInstance = NULL;
+static HANDLE g_ThreadHandle = NULL;
+static unsigned long g_ThreadID = 0;
+
+HWND GutGetWindowHandleWin32(void)
+{
+	return g_hWnd;
+}
+
+HINSTANCE GutGetWindowInstanceWin32(void)
+{
+	return g_hInstance;
+}
+
+void GutGetMouseState(int &x, int &y, int button[3])
+{
+	POINT p;
+
+	GetCursorPos(&p);
+	ScreenToClient(g_hWnd, &p);
+	
+	x = p.x;
+	y = p.y;
+	
+	button[0] = GetKeyState(VK_LBUTTON) & 0x80 ? 1 : 0;
+	button[1] = GetKeyState(VK_MBUTTON) & 0x80 ? 1 : 0;
+	button[2] = GetKeyState(VK_RBUTTON) & 0x80 ? 1 : 0;
+}
+
+// 視窗訊息處理函式
+static LRESULT WINAPI WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
+	//　檢查訊息種類
+	switch (message)
+	{
+        case WM_DESTROY:
+			// 如果視窗被關掉了，就主動發出程式該結束的訊息。
+			PostQuitMessage(0);
+			break;
+
+		case WM_SIZE: // 視窗大小被改變了
+			{
+				int w = LOWORD(lParam);
+				int h = HIWORD(lParam);
+				if ( g_GutCallBack.OnSize) 
+				{
+					// 有設定視窗大小改變的處理函式的話，就去呼叫它。
+					g_GutCallBack.OnSize(w, h);
+				}
+			}
+			break;
+
+		case WM_PAINT: // 視窗需要重畫
+			{
+				PAINTSTRUCT ps;
+				BeginPaint(hwnd, &ps);
+				EndPaint(hwnd, &ps);
+				if ( g_GutCallBack.OnPaint )
+				{
+					// 有設定重繪訊息處理函式的話，就去呼叫它。
+					g_GutCallBack.OnPaint();
+				}
+			}
+			break;
+		default:　// 其它訊息都直接交給內建的訊息處理函式去做
+			return DefWindowProc(hwnd, message, wParam, lParam);
+			break;
+    }
+
+	return 0;
+} // WndProc
+
+// 檢查Windows作業系統傳來的訊息
+bool GutProcessMessage(void)
+{
+	MSG	msg;
+	// 看看有沒有任何訊息
+	if ( PeekMessage(&msg, 0, 0, 0, PM_REMOVE) )
+	{
+		// 有訊息的話, 就把它送給訊息處理函式.
+		TranslateMessage(&msg);
+		DispatchMessage(&msg);
+		if ( msg.message==WM_QUIT )
+		{
+			// 收到關閉視窗的訊息會傳回false來結束迴圈.
+			return false;
+		}
+	}
+
+	return true;
+}
+
+// 開啟視窗
+// x, y = 視窗左上角的位置
+// width, height = 視窗大小
+// title = 視窗標題欄所顯示的文字
+bool GutCreateWindow(int x, int y, int width, int height, const char *title)
+{
+	WNDCLASS	window_class;
+
+	memset(&window_class, 0, sizeof(WNDCLASS));
+
+	// 設定視窗型態
+	window_class.style = CS_OWNDC | CS_HREDRAW | CS_VREDRAW;
+	// 設定訊息處理函式為WndProc
+	window_class.lpfnWndProc = WndProc;
+	// 取得目前執行的程式
+	window_class.hInstance = GetModuleHandle(NULL);
+	// 使用內定的滑鼠游標
+	window_class.hCursor = LoadCursor(NULL, IDC_ARROW);
+	// 背景設為黑色, 其實有沒有設都沒差.
+	window_class.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
+	// 給定一個註冊視窗時使用的名字
+	window_class.lpszClassName = title;
+	// 跟作業系統註冊一個新的視窗
+	if (RegisterClass(&window_class) == 0)
+		return 0;
+
+	DWORD window_style;
+
+	if ( g_GutCallBack.OnSize )
+	{
+		// 如果有處理視窗縮放的訊息, 才容許滑鼠改變視窗大小.
+		window_style = WS_OVERLAPPEDWINDOW;
+	}
+	else
+	{
+		// 如果有沒有處理視窗縮放的訊息, 不容許滑鼠改變視窗大小.
+		window_style = WS_BORDER | WS_SYSMENU;
+	}
+
+	// 計算視窗的邊線會佔掉的點數，必要時要增加視窗大小。
+	RECT window_rect;
+	SetRect(&window_rect, x, y, x+width, y+height);
+	AdjustWindowRect(&window_rect, window_style, FALSE);
+
+	// 準備工作完成，開啟一個視窗。
+	HWND window_handle = CreateWindowEx(
+		WS_EX_APPWINDOW,
+		title,
+		title,
+		window_style,
+		window_rect.left,				// x
+		window_rect.top,				// y
+		window_rect.right - window_rect.left,	// width
+		window_rect.bottom - window_rect.top,	// height
+		NULL,
+		NULL,
+		window_class.hInstance,
+		NULL
+		);
+
+	if (window_handle == NULL)
+		return 0;
+
+	// 記錄下用來代表視窗跟目前執行程式的物件，以後可以再用到。
+	g_hWnd = window_handle;
+	g_hInstance = window_class.hInstance;
+	// 顯示視窗
+	ShowWindow(window_handle, TRUE);
+
+	return 1;
+}

@@ -1,0 +1,24 @@
+#ifdef _ENABLE_DX10_
+
+#ifndef _GUTDX10_
+#define _GUTDX10_
+
+#include <d3d10.h>
+#pragma comment(lib, "d3d10.lib")
+#pragma comment(lib, "d3dx10.lib")
+
+bool GutInitGraphicsDeviceDX10(void);
+bool GutReleaseGraphicsDeviceDX10(void);
+
+ID3D10Device *GutGetGraphicsDeviceDX10(void);
+IDXGISwapChain *GutGetDX10SwapChain(void);
+
+ID3D10RenderTargetView *GutGetDX10RenderTargetView(void);
+ID3D10DepthStencilView *GutGetDX10DepthStencilView(void);
+
+ID3D10VertexShader* GutLoadVertexShaderDX10_HLSL(const char *filename, const char *entry, const char *profile, ID3D10Blob **pCode=NULL);
+ID3D10PixelShader * GutLoadPixelShaderDX10_HLSL(const char *filename, const char *entry, const char *profile);
+
+#endif // _GUTDX10_
+
+#endif // _ENABLE_DX10_

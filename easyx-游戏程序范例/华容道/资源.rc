@@ -1,0 +1,126 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+HELPDLG DIALOG DISCARDABLE  0, 0, 214, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "华容道游戏帮助"
+FONT 10, "System"
+BEGIN
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,7,26,200,140
+    CTEXT           "本游戏操作方式如下图所示。\n祝你玩的愉快。",IDC_STATIC,
+                    7,7,114,18
+    PUSHBUTTON      "关闭帮助，继续游戏",IDC_CLOSE,129,7,78,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    HELPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+HELPIMG                 BITMAP  DISCARDABLE     "图片\\游戏帮助.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// IMAGE
+//
+
+BORDER                  IMAGE   DISCARDABLE     "图片\\边缘.jpg"
+EMPTY                   IMAGE   DISCARDABLE     "图片\\空.jpg"
+BING                    IMAGE   DISCARDABLE     "图片\\兵.jpg"
+CC                      IMAGE   DISCARDABLE     "图片\\曹操.jpg"
+GY                      IMAGE   DISCARDABLE     "图片\\关羽.jpg"
+ZY                      IMAGE   DISCARDABLE     "图片\\赵云.jpg"
+ZF                      IMAGE   DISCARDABLE     "图片\\张飞.jpg"
+HZ                      IMAGE   DISCARDABLE     "图片\\黄忠.jpg"
+MC                      IMAGE   DISCARDABLE     "图片\\马超.jpg"
+MENU                    IMAGE   DISCARDABLE     "图片\\菜单.jpg"
+MAPMENU                 IMAGE   DISCARDABLE     "图片\\地图菜单.jpg"
+ABTGAME                 IMAGE   DISCARDABLE     "图片\\关于游戏.jpg"
+WIN                     IMAGE   DISCARDABLE     "图片\\胜利.jpg"
+GAMEITF                 IMAGE   DISCARDABLE     "图片\\游戏界面.jpg"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

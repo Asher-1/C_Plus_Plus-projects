@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  矿井逃生.cpp
+g:\develop\c++projects\easyx-游戏程序范例\矿井逃生\矿井逃生.cpp(89): warning C4326: “main”的返回类型应为“int”而非“void”
+  矿井逃生.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\Debug\矿井逃生.exe

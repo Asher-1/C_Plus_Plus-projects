@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  俄罗斯方块.cpp
+g:\develop\c++projects\easyx-游戏程序范例\俄罗斯方块\俄罗斯方块.cpp(100): warning C4326: “main”的返回类型应为“int”而非“void”
+  正在生成代码
+  All 18 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  俄罗斯方块.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\x64\Release\俄罗斯方块.exe

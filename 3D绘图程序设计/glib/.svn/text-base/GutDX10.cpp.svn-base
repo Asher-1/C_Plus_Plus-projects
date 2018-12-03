@@ -1,0 +1,224 @@
+#ifdef _ENABLE_DX10_
+
+#include <windows.h>
+#include <D3D10.h>
+#include <D3DX10.h>
+
+#include "Gut.h"
+#include "GutFileUtility.h"
+#include "GutWin32.h"
+#include "GutDX10.h"
+
+static ID3D10Device				*g_pd3dDevice = NULL;
+static IDXGISwapChain			*g_pSwapChain = NULL;
+
+static ID3D10Texture2D			*g_pDepthStencil = NULL;
+static ID3D10RenderTargetView	*g_pRenderTargetView = NULL;
+static ID3D10DepthStencilView	*g_pDepthStencilView = NULL;
+
+static ID3D10Effect				*g_pDefaultEffect = NULL;
+static ID3D10EffectTechnique	*g_pDefaultTechnique = NULL;
+
+ID3D10Device *GutGetGraphicsDeviceDX10(void)
+{
+	return g_pd3dDevice;
+}
+
+IDXGISwapChain *GutGetDX10SwapChain(void)
+{
+	return g_pSwapChain;
+}
+
+ID3D10RenderTargetView *GutGetDX10RenderTargetView(void)
+{
+	return g_pRenderTargetView;
+}
+
+ID3D10DepthStencilView *GutGetDX10DepthStencilView(void)
+{
+	return g_pDepthStencilView;
+}
+
+//--------------------------------------------------------------------------------------
+// Create Direct3D10 device and swap chain
+//--------------------------------------------------------------------------------------
+bool GutInitGraphicsDeviceDX10()
+{
+    HRESULT hr = S_OK;
+	// 取得視窗
+	HWND hWnd = GutGetWindowHandleWin32();
+	// 取得視窗大小
+    RECT rc;
+    GetClientRect( hWnd, &rc );
+    UINT width = rc.right - rc.left;
+    UINT height = rc.bottom - rc.top;
+
+    UINT createDeviceFlags = 0;
+#ifdef _DEBUG
+    createDeviceFlags |= D3D10_CREATE_DEVICE_DEBUG;
+#endif
+
+	// 設定Front buffer/Back buffer大小及格式
+    DXGI_SWAP_CHAIN_DESC sd;
+    ZeroMemory( &sd, sizeof(sd) );
+    sd.BufferCount = 1;
+    sd.BufferDesc.Width = width;
+    sd.BufferDesc.Height = height;
+    sd.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+    sd.BufferDesc.RefreshRate.Numerator = 60;
+    sd.BufferDesc.RefreshRate.Denominator = 1;
+    sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
+    sd.OutputWindow = hWnd;
+    sd.SampleDesc.Count = 1;
+    sd.SampleDesc.Quality = 0;
+    sd.Windowed = TRUE;
+	// 開啟Front buffer/Back buffer
+	hr = D3D10CreateDeviceAndSwapChain( NULL, D3D10_DRIVER_TYPE_HARDWARE, NULL, createDeviceFlags, 
+                                        D3D10_SDK_VERSION, &sd, &g_pSwapChain, &g_pd3dDevice );
+	if( FAILED(hr) )
+        return false;
+
+    // 取出第一個display buffer
+    ID3D10Texture2D *pBuffer = NULL;
+    hr = g_pSwapChain->GetBuffer( 0, __uuidof( ID3D10Texture2D ), (LPVOID*)&pBuffer );
+    if( FAILED(hr) )
+        return false;
+	// 開啟一個合乎display buffer格式的RenderTargetView
+    hr = g_pd3dDevice->CreateRenderTargetView( pBuffer, NULL, &g_pRenderTargetView );
+    pBuffer->Release();
+    if( FAILED( hr ) )
+        return false;
+
+    // 設定Depth/Stencil buffer的資料格式
+    D3D10_TEXTURE2D_DESC descDepth;
+    descDepth.Width = width;
+    descDepth.Height = height;
+    descDepth.MipLevels = 1;
+    descDepth.ArraySize = 1;
+    descDepth.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
+    descDepth.SampleDesc.Count = 1;
+    descDepth.SampleDesc.Quality = 0;
+    descDepth.Usage = D3D10_USAGE_DEFAULT;
+    descDepth.BindFlags = D3D10_BIND_DEPTH_STENCIL;
+    descDepth.CPUAccessFlags = 0;
+    descDepth.MiscFlags = 0;
+	// 配置Depth/Stencil buffer的空間
+    hr = g_pd3dDevice->CreateTexture2D( &descDepth, NULL, &g_pDepthStencil );
+    if( FAILED(hr) )
+        return false;
+
+    // 設定Depth/Stencil View的格式
+    D3D10_DEPTH_STENCIL_VIEW_DESC descDSV;
+    descDSV.Format = descDepth.Format;
+    descDSV.ViewDimension = D3D10_DSV_DIMENSION_TEXTURE2D;
+    descDSV.Texture2D.MipSlice = 0;
+	// 開啟DepthStencil Buffer的View
+    hr = g_pd3dDevice->CreateDepthStencilView( g_pDepthStencil, &descDSV, &g_pDepthStencilView );
+    if( FAILED(hr) )
+        return false;
+
+	// 設定繪圖的結果會存放在什麼地方
+	// RenderTargetView = RGBA Color Buffer resource
+	// DepthStencilView = Depth/Stencil Buffer resource
+	g_pd3dDevice->OMSetRenderTargets(1, &g_pRenderTargetView, g_pDepthStencilView);
+
+	// Viewport用來指定3D繪圖的畫布範圍
+    // 把Viewport設定成跟整個視窗一樣大
+    D3D10_VIEWPORT vp;
+    vp.Width = width;
+    vp.Height = height;
+    vp.MinDepth = 0.0f;
+    vp.MaxDepth = 1.0f;
+    vp.TopLeftX = 0;
+    vp.TopLeftY = 0;
+    g_pd3dDevice->RSSetViewports( 1, &vp );
+
+	return true;
+}
+
+bool GutReleaseGraphicsDeviceDX10(void)
+{
+	SAFE_RELEASE(g_pRenderTargetView);
+	SAFE_RELEASE(g_pDepthStencilView);
+	SAFE_RELEASE(g_pDepthStencil);
+	SAFE_RELEASE(g_pSwapChain);
+	SAFE_RELEASE(g_pd3dDevice);
+
+	return true;
+}
+
+// 載入Vertex Shader
+// file = HLSL shader file
+// entry = pixel shader entry point
+// profile = shader version
+// pShaderCode = compiled shader binary code
+ID3D10VertexShader* GutLoadVertexShaderDX10_HLSL(const char *filename, const char *entry, const char *profile, ID3D10Blob **pShaderCode)
+{
+    DWORD dwShaderFlags = 0;
+#if defined( DEBUG ) || defined( _DEBUG )
+	dwShaderFlags |= D3D10_SHADER_DEBUG;
+#endif
+
+	ID3D10VertexShader *pShader = NULL;
+    ID3D10Blob	*pBuf = NULL;
+	ID3D10Blob	*pErrorMessage = NULL;
+
+	if ( D3D_OK==D3DX10CompileFromFile(filename, NULL, NULL, entry, profile, dwShaderFlags, NULL, NULL, &pBuf, &pErrorMessage, NULL) )
+	{
+		g_pd3dDevice->CreateVertexShader( (DWORD*) pBuf->GetBufferPointer(), pBuf->GetBufferSize(), &pShader);
+	}
+	else
+	{
+		if ( pErrorMessage )
+		{
+			printf("Failed to compile %s : %s\n", pErrorMessage->GetBufferPointer());
+		}
+	}
+
+	SAFE_RELEASE(pErrorMessage);
+
+	if ( pShaderCode )
+	{
+		*pShaderCode = pBuf;
+	}
+	else
+	{
+		SAFE_RELEASE(pBuf);
+	}
+
+	return pShader;
+}
+// 載入Pixel Shader
+// file = HLSL shader file
+// entry = pixel shader entry point
+// profile = shader version
+ID3D10PixelShader * GutLoadPixelShaderDX10_HLSL(const char *filename, const char *entry, const char *profile)
+{
+    DWORD dwShaderFlags = 0;
+#if defined( DEBUG ) || defined( _DEBUG )
+	dwShaderFlags |= D3D10_SHADER_DEBUG;
+#endif
+
+	ID3D10PixelShader *pShader = NULL;
+    ID3D10Blob	*pBuf = NULL;
+	ID3D10Blob	*pErrorMessage = NULL;
+
+	if ( D3D_OK==D3DX10CompileFromFile(filename, NULL, NULL, entry, profile, dwShaderFlags, NULL, NULL, &pBuf, &pErrorMessage, NULL) )
+	{
+		g_pd3dDevice->CreatePixelShader( (DWORD*) pBuf->GetBufferPointer(), pBuf->GetBufferSize(), &pShader);
+	}
+	else
+	{
+		if ( pErrorMessage )
+		{
+			printf("Failed to compile %s : %s\n", pErrorMessage->GetBufferPointer());
+		}
+	}
+
+	SAFE_RELEASE(pErrorMessage);
+	SAFE_RELEASE(pBuf);
+	
+	return pShader;
+}
+
+#endif // _ENABLE_DX10_

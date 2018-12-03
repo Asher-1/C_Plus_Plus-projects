@@ -1,0 +1,269 @@
+#include <stdio.h>
+#include <memory.h>
+#include <math.h>
+
+#include "GutWin32.h"
+#include "Gut.h"
+#include "GutDX9.h"
+#include "GutDX10.h"
+#include "GutOpenGL.h"
+
+GutCallBack g_GutCallBack;
+static char g_szDeviceName[8];
+GutEnum g_eDeviceType = GUT_UNKNOWN;
+
+GutCallBack::GutCallBack(void)
+{
+	memset(this, 0, sizeof(GutCallBack));
+}
+
+void GutResizeFunc( void (*onsize)(int x, int y) )
+{
+	g_GutCallBack.OnSize = onsize;
+}
+
+void GutDisplayFunc( void (*onpaint)(void) )
+{
+	g_GutCallBack.OnPaint = onpaint;
+}
+
+void GutIdleFunc( void (*onidle)(void) )
+{
+	g_GutCallBack.OnIdle = onidle;
+}
+
+void GutOnCloseFunc( void (*onclose)(void) )
+{
+	g_GutCallBack.OnClose = onclose;
+}
+
+bool GutInitGraphicsDevice(const char *device)
+{
+	strcpy(g_szDeviceName, device);
+	g_eDeviceType = GutGetGraphicsDeviceType(device);
+
+	switch(g_eDeviceType)
+	{
+	case GUT_OPENGL:
+		return GutInitGraphicsDeviceOpenGL();
+		break;
+	case GUT_DX9:
+		return GutInitGraphicsDeviceDX9();
+		break;
+	case GUT_DX10:
+	#ifdef _ENABLE_DX10_
+		return GutInitGraphicsDeviceDX10();
+	#endif // _ENABLE_DX10_	
+		break;
+	}
+
+	g_eDeviceType = GUT_UNKNOWN;
+	g_szDeviceName[0] = '\0';
+
+	return false;
+}
+
+bool GutReleaseGraphicsDevice(void)
+{
+	if ( !stricmp(g_szDeviceName, "opengl") )
+	{
+		return GutReleaseGraphicsDeviceOpenGL();
+	}
+	else if ( !stricmp(g_szDeviceName, "dx9") )
+	{
+		return GutReleaseGraphicsDeviceDX9();
+	}
+	else if ( !stricmp(g_szDeviceName, "dx10") )
+	{
+	#ifdef _ENABLE_DX10_
+		return GutReleaseGraphicsDeviceDX10();
+	#endif
+	}
+
+	return false;
+}
+
+GutEnum GutGetGraphicsDeviceType(const char *device)
+{
+	if ( device )
+	{
+		if ( !stricmp(device, "opengl") )
+		{
+			return GUT_OPENGL;
+		}
+		else if ( !stricmp(device, "dx9") )
+		{
+			return GUT_DX9;
+		}
+		else if ( !stricmp(device, "dx10") )
+		{
+			return GUT_DX10;
+		}
+		else
+		{
+			return GUT_UNKNOWN;
+		}
+	}
+	else
+	{
+		return g_eDeviceType;
+	}
+}
+
+// Direct3D native left hand coord system
+// eye = 鏡頭位置
+// lookat = 鏡頭對準的位置
+// up = 鏡頭正上方的方向
+Matrix4x4 GutMatrixLookAt_DirectX(Vector4 &eye, Vector4 &lookat, Vector4 &up)
+{
+	Vector4 up_normalized = VectorNormalize(up);
+	Vector4 zaxis = (lookat - eye); zaxis.Normalize();
+	Vector4 xaxis = Vector3CrossProduct(up_normalized, zaxis);
+	Vector4 yaxis = Vector3CrossProduct(zaxis, xaxis);
+
+	Matrix4x4 matrix; 
+	matrix.Identity();
+
+	matrix.SetColumn(0, xaxis);
+	matrix.SetColumn(1, yaxis);
+	matrix.SetColumn(2, zaxis);
+	matrix[3][0] = -Vector3Dot(xaxis, eye)[0];
+	matrix[3][1] = -Vector3Dot(yaxis, eye)[0];
+	matrix[3][2] = -Vector3Dot(zaxis, eye)[0];
+
+	return matrix;
+}
+// Direct3D native left hand coord system
+// w = 鏡頭水平方向可以看到的範圍
+// h = 鏡頭垂直方向可以看到的範圍
+// z_hear = 鏡頭可以看到的最近距離
+// z_far = 鏡頭可以看到的最遠距離
+Matrix4x4 GutMatrixOrtho_DirectX(float w, float h, float z_near, float z_far)
+{
+	Matrix4x4 matrix;
+	matrix.Identity();
+	
+	matrix[0][0] = 2.0f/w;
+	matrix[1][1] = 2.0f/h;
+	matrix[2][2] = 1.0f/(z_far - z_near);
+	matrix[3][2] = z_near / (z_near - z_far);
+
+	return matrix;
+}
+// Direct3D native left hand system
+// fovy = 垂直方向的視角
+// aspect = 水平方向視角對重直方向視角的比值
+// z_hear = 鏡頭可以看到的最近距離
+// z_far = 鏡頭可以看到的最遠距離
+Matrix4x4 GutMatrixPerspective_DirectX(float fovy, float aspect, float z_near, float z_far)
+{
+	Matrix4x4 matrix;
+	matrix.Identity();
+
+	float fovy_radian = FastMath::DegreeToRadian(fovy);
+	float yscale = FastMath::Cot(fovy_radian/2.0f);
+	float xscale = yscale * aspect;
+
+	matrix[0][0] = xscale;
+	matrix[1][1] = yscale;
+	matrix[2][2] = z_far / (z_far - z_near);
+	matrix[2][3] = 1.0f;
+	matrix[3][2] = -(z_near * z_far) /(z_far - z_near);
+	matrix[3][3] = 0.0f;
+
+	return matrix;
+}
+
+// d3d converted right hand coord system
+Matrix4x4 GutMatrixLookAtRH_DirectX(Vector4 &eye, Vector4 &lookat, Vector4 &up)
+{
+	Vector4 up_normalized = VectorNormalize(up);
+	Vector4 zaxis = (eye - lookat); zaxis.Normalize();
+	Vector4 xaxis = Vector3CrossProduct(up_normalized, zaxis);
+	Vector4 yaxis = Vector3CrossProduct(zaxis, xaxis);
+
+	Matrix4x4 matrix; 
+	matrix.Identity();
+
+	matrix.SetColumn(0, xaxis);
+	matrix.SetColumn(1, yaxis);
+	matrix.SetColumn(2, zaxis);
+	matrix[3][0] = -Vector3Dot(xaxis, eye)[0];
+	matrix[3][1] = -Vector3Dot(yaxis, eye)[0];
+	matrix[3][2] = -Vector3Dot(zaxis, eye)[0];
+
+	return matrix;
+}
+// d3d converted right hand coord system
+Matrix4x4 GutMatrixOrthoRH_DirectX(float w, float h, float z_near, float z_far)
+{
+	Matrix4x4 matrix;
+	matrix.Identity();
+	
+	matrix[0][0] = 2.0f/w;
+	matrix[1][1] = 2.0f/h;
+	matrix[2][2] = 1.0f/(z_near - z_far);
+	matrix[3][2] = z_near / (z_near - z_far);
+
+	return matrix;
+}
+
+// OpenGL native right hand system
+Matrix4x4 GutMatrixLookAt_OpenGL(Vector4 &eye, Vector4 &lookat, Vector4 &up)
+{
+	Vector4 up_normalized = VectorNormalize(up);
+	Vector4 zaxis = (eye - lookat); zaxis.Normalize();
+	Vector4 xaxis = Vector3CrossProduct(up_normalized, zaxis);
+	Vector4 yaxis = Vector3CrossProduct(zaxis, xaxis);
+
+	Matrix4x4 matrix; 
+	matrix.Identity();
+
+	matrix.SetColumn(0, xaxis);
+	matrix.SetColumn(1, yaxis);
+	matrix.SetColumn(2, zaxis);
+	matrix[3][0] = -Vector3Dot(xaxis, eye)[0];
+	matrix[3][1] = -Vector3Dot(yaxis, eye)[0];
+	matrix[3][2] = -Vector3Dot(zaxis, eye)[0];
+
+	return matrix;
+}
+// OpenGL native right hand system
+// fovy = 垂直方向的視角
+// aspect = 水平方向視角對重直方向視角的比值
+// z_hear = 鏡頭可以看到的最近距離
+// z_far = 鏡頭可以看到的最遠距離
+Matrix4x4 GutMatrixOrtho_OpenGL(float w, float h, float z_near, float z_far)
+{
+	Matrix4x4 matrix;
+	matrix.Identity();
+	
+	matrix[0][0] = 2.0f/w;
+	matrix[1][1] = 2.0f/h;
+	matrix[2][2] = -2.0f / (z_far - z_near);
+	matrix[3][2] = -(z_far + z_near) / (z_far - z_near);
+
+	return matrix;
+}
+// OpenGL native right hand system
+// eye = 鏡頭位置
+// lookat = 鏡頭對準的位置
+// up = 鏡頭正上方的方向
+Matrix4x4 GutMatrixPerspective_OpenGL(float fovy, float aspect, float z_near, float z_far)
+{
+	Matrix4x4 matrix;
+	matrix.Identity();
+
+	float fovy_radian = FastMath::DegreeToRadian(fovy);
+	float yscale =  FastMath::Cot(fovy_radian/2.0f);
+	float xscale = yscale * aspect;
+
+	matrix[0][0] = xscale;
+	matrix[1][1] = yscale;
+	matrix[2][2] = (z_far + z_near)/(z_near - z_far);
+	matrix[2][3] = -1.0f;
+	matrix[3][2] = 2.0f * z_far * z_near / (z_near - z_far);
+	matrix[3][3] = 0.0f;
+
+	return matrix;
+}

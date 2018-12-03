@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="DX9">
+      <UniqueIdentifier>{39908954-6cfb-45fb-9aa6-debbd9cce709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{2220a664-3035-44b8-950e-ed43876d6df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{3b3ce3a2-4b59-43b8-8973-9d79b246cfbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX10">
+      <UniqueIdentifier>{3972c6cc-a949-45a5-997b-a09a295763cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{b3452ea8-4691-4dac-8055-4780d541e81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{36e938de-cde3-4f16-a134-614d900543a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{fc6d10e7-0baa-46ba-9089-d2aeef3dbab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sys">
+      <UniqueIdentifier>{2e3dff17-d51c-4b6a-bad6-4ad8fc713420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{a4724935-3f5f-4840-b896-771a40b07fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font">
+      <UniqueIdentifier>{83f08b6f-2cdd-44bd-850b-064d824ef7e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Gut.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GutFileUtility.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GutUserControl.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GutDX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="GutFont_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="GutHeightmap_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="GutModel_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="GutTexture_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4x4_Reference.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4x4_SSE.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4_Reference.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4_SSE.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="glew.c">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GutFont_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GutHeightmap_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GutModel_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GutOpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GutTexture_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="GutDX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="GutFont_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="GutHeightmap_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="GutModel_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="GutTexture_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="GutTimer.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GutWin32.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="GutInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GutHeightmap.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GutModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GutParticle.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GutShadowVolume.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GutMem.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="GutBMP.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="GutDDS.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="GutImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="GutTGA.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="GutFont.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GutFontUnicodeWin32.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Gut.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GutDefs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GutFileUtility.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GutUserControl.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GutDX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="GutFont_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="GutHeightmap_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="GutModel_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="GutTexture_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="FastMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4x4_Reference.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4x4_SSE.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4_Reference.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4_SSE.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="glew.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="glxew.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GutFont_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GutHeightmap_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GutModel_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GutOpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GutTexture_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="wglew.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="GutDX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="GutFont_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="GutHeightmap_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="GutModel_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="GutTexture_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="GutTimer.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="GutWin32.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="GutInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GutHeightmap.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GutModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GutParticle.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GutShadowVolume.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GutMem.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="GutBMP.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GutDDS.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GutImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GutTGA.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GutFont.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GutFontUnicodeWin32.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

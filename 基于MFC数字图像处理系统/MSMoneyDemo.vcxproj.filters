@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="imageTools">
+      <UniqueIdentifier>{277664d6-c445-4e0f-845b-30163a2c6fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoTools">
+      <UniqueIdentifier>{b800fd86-bca4-4d37-830b-6e8fadd811b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMCaptionBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMCaptionBarButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMCategoryBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMCategoryBarButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMLinksBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMLinksBarButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMMenuBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMoneyDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMoneyDemoDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMoneyDemoView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMTasksPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSMVisualManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\ImageDib.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\GeometryTrans.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\GrayTrans.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\FourierTrans.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\Histogram.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\ImageEnhance.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\ImageFreqEnhance.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\ImgSegment.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\Morphology.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\WaveletTrans.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\GeometryMoveDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\HistogramDrawDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\HistSegmentDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\LinearStepParamDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\MedianSmoothDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\NeiAverSmoothDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\StrechWindowDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\ThreshStrechDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\Zoomdlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\RotateDlg.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="OriginView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMySplitterWndEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\FaceDetect.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\Register.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\PlateTrans.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\charsRecognition.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="imageTools\Result.cpp">
+      <Filter>imageTools</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoTools\AVIHandle.cpp">
+      <Filter>VideoTools</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoTools\MeanShiftSegger.cpp">
+      <Filter>VideoTools</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoTools\chafenMul.cpp">
+      <Filter>VideoTools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMCaptionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMCaptionBarButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMCategoryBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMCategoryBarButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMLinksBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMLinksBarButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMMenuBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMoneyDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMoneyDemoDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMoneyDemoView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMTasksPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSMVisualManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\ImageDib.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\GeometryTrans.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\GrayTrans.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\FourierTrans.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\Histogram.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\ImageEnhance.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\ImageFreqEnhance.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\ImgSegment.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\Morphology.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\WaveletTrans.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\GeometryMoveDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\HistogramDrawDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\HistSegmentDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\LinearStepParamDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\MedianSmoothDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\NeiAverSmoothDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\StrechWindowDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\ThreshStrechDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\Zoomdlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\RotateDlg.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="OriginView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMySplitterWndEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\FaceDetect.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\Register.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\PlateTrans.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\charsRecognition.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="imageTools\Structure.h">
+      <Filter>imageTools</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoTools\AVIHandle.h">
+      <Filter>VideoTools</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoTools\MeanShiftSegger.h">
+      <Filter>VideoTools</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoTools\chafenMul.h">
+      <Filter>VideoTools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MSMoneyDemo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MSMoneyDemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MSMoneyDemoDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MSMoneyDemo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\coldtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hottoolb.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menu_img.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\menu_images_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FrameBkgnd.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ViewBkgnd.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\CaptionBtns.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\distool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\prestool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OK.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

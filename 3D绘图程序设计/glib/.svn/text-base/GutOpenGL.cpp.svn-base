@@ -1,0 +1,162 @@
+#include <windows.h>
+#include <stdio.h>
+
+#include "glew.h"
+#include "wglew.h"
+#include <GL/gl.h>
+
+#include "GutWin32.h"
+#include "GutFileUtility.h"
+
+static HDC g_hDC = NULL;
+static HGLRC g_hGLRC = NULL;
+
+static bool SetPixelformat(HDC hdc)
+{
+	PIXELFORMATDESCRIPTOR pfd;
+	ZeroMemory(&pfd, sizeof(pfd));
+
+	pfd.nSize = sizeof(PIXELFORMATDESCRIPTOR);
+	pfd.nVersion = 1;
+	pfd.dwFlags = PFD_DRAW_TO_WINDOW | PFD_SUPPORT_OPENGL | PFD_GENERIC_ACCELERATED | PFD_DOUBLEBUFFER | PFD_TYPE_RGBA;
+	pfd.iPixelType = PFD_TYPE_RGBA;
+	pfd.cDepthBits = 24; // 24 bits zbuffer
+	pfd.cStencilBits = 8; // 8 bits stencil buffer
+	pfd.iLayerType = PFD_MAIN_PLANE; // main layer
+
+	int pixelformat = ChoosePixelFormat(hdc, &pfd);
+
+    if ( pixelformat== 0 ) 
+    { 
+        return false; 
+    } 
+ 
+    if ( SetPixelFormat(hdc, pixelformat, &pfd) == FALSE) 
+    { 
+        return false; 
+    }
+
+    return true; 
+}
+
+bool GutInitGraphicsDeviceOpenGL(void)
+{
+	HWND hWnd = GutGetWindowHandleWin32();
+
+	if ( hWnd )
+	{
+		g_hDC = GetDC(hWnd);
+		if ( !SetPixelformat(g_hDC) )
+		{
+			ReleaseDC(hWnd, g_hDC);
+			return false;
+		}
+		g_hGLRC = wglCreateContext(g_hDC);
+		wglMakeCurrent(g_hDC, g_hGLRC);
+
+		glewInit();
+	}
+
+	return true;
+}
+
+bool GutReleaseGraphicsDeviceOpenGL(void)
+{
+	HWND hWnd = GutGetWindowHandleWin32();
+	ReleaseDC(hWnd, g_hDC);
+
+	if( wglGetCurrentContext() != NULL )
+		wglMakeCurrent(NULL, NULL);
+
+	return true;
+}
+
+// 呈現出背景
+void GutSwapBuffersOpenGL(void)
+{
+	SwapBuffers(g_hDC);
+}
+
+// 載入OpenGL ARB Vertex Program規格的組合語言
+GLuint GutLoadVertexProgramOpenGL_ASM(const char *filename)
+{
+	unsigned int size = 0;
+	// 讀入檔案
+	unsigned char *buffer = (unsigned char *) GutLoadBinaryStream(filename, &size);
+	if ( buffer==NULL )
+	{
+		return 0;
+	}
+
+	GLuint shader_id = 0;
+	// 產生一個shader物件
+	glGenProgramsARB(1, &shader_id);
+	// 使用新的shader物件, 並把它設定成vertex program物件
+	glBindProgramARB(GL_VERTEX_PROGRAM_ARB, shader_id);
+  	// 把組合語言指令載入shader物件中
+	glProgramStringARB(GL_VERTEX_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, size, buffer);
+	// 如果Shader中出現了任何錯誤
+	if ( GL_INVALID_OPERATION == glGetError() )
+	{
+		// Find the error position
+		GLint errPos;
+		glGetIntegerv( GL_PROGRAM_ERROR_POSITION_ARB, &errPos );
+		// errors and warnings string.
+		GLubyte *errString = (GLubyte *) glGetString(GL_PROGRAM_ERROR_STRING_ARB);
+		fprintf( stderr, "error at position: %d\n%s\n", errPos, errString );
+		// 讀取失敗, 釋放shader物件
+		glDeleteProgramsARB(1, &shader_id);
+		shader_id = 0;
+	}
+	// 把載入檔案的記憶體釋放
+	GutReleaseBinaryStream(buffer);
+	// shader_id代表新的shader物件
+	return shader_id;
+}
+
+void GutReleaseVertexProgramOpenGL(GLuint shader_id)
+{
+	glDeleteProgramsARB( 1, &shader_id );
+}
+
+// 載入OpenGL ARB Fragment Program規格的組合語言
+GLuint GutLoadFragmentProgramOpenGL_ASM(const char *filename)
+{
+	unsigned int size = 0;
+	// 讀入檔案
+	unsigned char *buffer = (unsigned char *) GutLoadBinaryStream(filename, &size);
+	if ( buffer==NULL )
+	{
+		return 0;
+	}
+
+	GLuint shader_id = 0;
+	// 產生一個shader物件
+	glGenProgramsARB(1, &shader_id);
+	// 使用新的shader物件, 並把它設定成fragment program物件
+    glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, shader_id );
+	// 把組合語言指令載入shader物件中
+	glProgramStringARB(GL_FRAGMENT_PROGRAM_ARB, GL_PROGRAM_FORMAT_ASCII_ARB, size, buffer);
+	// 如果Shader中出現了任何錯誤
+	if ( GL_INVALID_OPERATION == glGetError() )
+	{
+		// Find the error position
+		GLint errPos;
+		glGetIntegerv( GL_PROGRAM_ERROR_POSITION_ARB, &errPos );
+		// errors and warnings string.
+		GLubyte *errString = (GLubyte *) glGetString(GL_PROGRAM_ERROR_STRING_ARB);
+		fprintf( stderr, "error at position: %d\n%s\n", errPos, errString );
+		// 讀取失敗, 釋放shader物件
+		glDeleteProgramsARB(1, &shader_id);
+		shader_id = 0;
+	}
+	// 把載入檔案的記憶體釋放
+	GutReleaseBinaryStream(buffer);
+	// shader_id代表新的shader物件
+	return shader_id;
+}
+
+void GutReleaseFragmentProgramOpenGL(GLuint shader_id)
+{
+	glDeleteProgramsARB( 1, &shader_id );
+}

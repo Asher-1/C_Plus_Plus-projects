@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  火柴人跳跃.cpp
+g:\develop\c++projects\easyx-游戏程序范例\火柴人跳跃\火柴人跳跃.cpp(527): warning C4326: “main”的返回类型应为“int”而非“void”
+  正在生成代码
+  All 189 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  火柴人跳跃.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\Release\火柴人跳跃.exe

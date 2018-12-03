@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5746AAAF-3628-4CB6-B04D-46242136267F}</ProjectGuid>
+    <RootNamespace>FeatureReuse</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>G:\develop\c++Projects\FeatureReuse3\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>G:\develop\c++Projects\FeatureReuse3\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MEMWATCH;DMW_STDIO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>/D "_CRT_SECURE_NO_WARNINGS" %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;GLAUX.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions> /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CButtonST\BCMenu.cpp" />
+    <ClCompile Include="CButtonST\BtnST.cpp" />
+    <ClCompile Include="DockingBar\scbarcf.cpp" />
+    <ClCompile Include="DockingBar\scbarg.cpp" />
+    <ClCompile Include="DockingBar\sizecbar.cpp" />
+    <ClCompile Include="DockingBar\ViewBar.cpp" />
+    <ClCompile Include="FeatureReuse.cpp" />
+    <ClCompile Include="FeatureReuseDoc.cpp" />
+    <ClCompile Include="FeatureReuseView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="memwatch.c" />
+    <ClCompile Include="opengl\CadBase.cpp" />
+    <ClCompile Include="opengl\cadbase1.cpp" />
+    <ClCompile Include="opengl\Camera.CPP" />
+    <ClCompile Include="opengl\GLView.cpp" />
+    <ClCompile Include="opengl\jxglTracker.cpp" />
+    <ClCompile Include="opengl\OpenGLDC.cpp" />
+    <ClCompile Include="ParserVrml.cpp" />
+    <ClCompile Include="predicates.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Scanner.cpp" />
+    <ClCompile Include="Section.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tetgen.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TriChip.cpp" />
+    <ClCompile Include="trimesh\src\conn_comps.cpp" />
+    <ClCompile Include="trimesh\src\diffuse.cpp" />
+    <ClCompile Include="trimesh\src\edgeflip.cpp" />
+    <ClCompile Include="trimesh\src\faceflip.cpp" />
+    <ClCompile Include="trimesh\src\filter.cpp" />
+    <ClCompile Include="trimesh\src\ICP.cpp" />
+    <ClCompile Include="trimesh\src\KDtree.cpp" />
+    <ClCompile Include="trimesh\src\lmsmooth.cpp" />
+    <ClCompile Include="trimesh\src\mesh_check.cpp" />
+    <ClCompile Include="trimesh\src\mesh_crunch.cpp" />
+    <ClCompile Include="trimesh\src\mesh_hf.cpp" />
+    <ClCompile Include="trimesh\src\mesh_shade.cpp" />
+    <ClCompile Include="trimesh\src\remove.cpp" />
+    <ClCompile Include="trimesh\src\remove_outliers.cpp" />
+    <ClCompile Include="trimesh\src\reorder_verts.cpp" />
+    <ClCompile Include="trimesh\src\subdiv.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_bounding.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_connectivity.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_curvature.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_grid.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_io.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_normals.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_pointareas.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_stats.cpp" />
+    <ClCompile Include="trimesh\src\TriMesh_tstrips.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CButtonST\BCMenu.h" />
+    <ClInclude Include="CButtonST\BtnST.h" />
+    <ClInclude Include="DockingBar\scbarcf.h" />
+    <ClInclude Include="DockingBar\scbarg.h" />
+    <ClInclude Include="DockingBar\sizecbar.h" />
+    <ClInclude Include="DockingBar\ViewBar.h" />
+    <ClInclude Include="FeatureReuse.h" />
+    <ClInclude Include="FeatureReuseDoc.h" />
+    <ClInclude Include="FeatureReuseView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="memwatch.h" />
+    <ClInclude Include="opengl\CadBase.h" />
+    <ClInclude Include="opengl\Camera.H" />
+    <ClInclude Include="opengl\freeglut.h" />
+    <ClInclude Include="opengl\freeglut_ext.h" />
+    <ClInclude Include="opengl\freeglut_std.h" />
+    <ClInclude Include="opengl\jxglTracker.h" />
+    <ClInclude Include="opengl\memdc.h" />
+    <ClInclude Include="opengl\OpenGLDC.h" />
+    <ClInclude Include="opengl\shitu.h" />
+    <ClInclude Include="ParserVrml.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scanner.h" />
+    <ClInclude Include="Section.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tetgen.h" />
+    <ClInclude Include="TriChip.h" />
+    <ClInclude Include="trimesh\include\ICP.h" />
+    <ClInclude Include="trimesh\include\KDtree.h" />
+    <ClInclude Include="trimesh\include\TriMesh.h" />
+    <ClInclude Include="trimesh\include\TriMesh_algo.h" />
+    <ClInclude Include="trimesh\include\XForm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\1.ico" />
+    <Image Include="res\2.ico" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\FeatureReuse.ico" />
+    <Image Include="res\FeatureReuseDoc.ico" />
+    <Image Include="res\tb_displ.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\ToolbarDraw.bmp" />
+    <Image Include="res\ToolbarDrawDisabled.bmp" />
+    <Image Include="res\ToolbarDrawHot.bmp" />
+    <Image Include="res\ToolbarDummy.bmp" />
+    <Image Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FeatureReuse.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Enter a file name" />
+    <None Include="res\FeatureReuse.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FeatureReuse.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

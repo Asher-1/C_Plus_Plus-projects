@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  小球碰撞运动.cpp
+g:\develop\c++projects\easyx-游戏程序范例\小球碰撞运动\小球碰撞运动.cpp(127): warning C4326: “main”的返回类型应为“int”而非“void”
+  小球碰撞运动.vcxproj -> G:\develop\c++Projects\easyx-游戏程序范例\x64\Debug\小球碰撞运动.exe

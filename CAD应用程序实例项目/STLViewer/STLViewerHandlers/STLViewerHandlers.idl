@@ -1,0 +1,69 @@
+// STLViewerHandlers.idl : STLViewerHandlers的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(STLViewerHandlers.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(7E9EFDA0-DB6E-4611-84F2-1FC8E459C4DB),
+	pointer_default(unique)
+]
+interface IPreview : IUnknown
+{
+};
+
+[
+	object,
+	uuid(7FD06204-B970-42EB-A8C4-4C592B7FDAEA),
+	pointer_default(unique)
+]
+interface IThumbnail : IUnknown
+{
+};
+
+[
+	object,
+	uuid(231329B8-AA89-4AB6-A021-73EB61B06B04),
+	pointer_default(unique)
+]
+interface ISearch : IUnknown
+{
+};
+
+[
+	uuid(C7C98F1E-53DF-48FC-9D8A-026E0866969E),
+	version(1.0),
+]
+library STLViewerHandlersLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(13B23B27-D454-49B1-97B2-6E6F9C118AAD)
+	]
+	coclass Preview
+	{
+		[default] interface IPreviewHandler;
+	};
+	[
+		uuid(800809D9-32ED-4992-845D-A1C435386609)
+	]
+	coclass Thumbnail
+	{
+		[default] interface IThumbnailProvider;
+	};
+	[
+		uuid(DAA928BA-4465-4BEE-93E8-A1713B326273)
+	]
+	coclass Search
+	{
+		[default] interface IFilter;
+	};
+};
+
+import "shobjidl.idl";
+import "thumbcache.idl";
+import "filter.idl";

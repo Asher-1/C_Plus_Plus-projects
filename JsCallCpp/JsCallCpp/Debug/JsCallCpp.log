@@ -1,0 +1,2 @@
+﻿JsCallCppDlg.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct CRuntimeClass * __thiscall CExplorer1::GetRuntimeClass(void)const " (?GetRuntimeClass@CExplorer1@@UBEPAUCRuntimeClass@@XZ)
+G:\develop\c++Projects\JsCallCpp\Debug\JsCallCpp.exe : fatal error LNK1120: 1 个无法解析的外部命令

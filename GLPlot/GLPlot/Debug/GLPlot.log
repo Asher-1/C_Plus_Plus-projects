@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  GLDrawView.cpp
+  GLPlot.cpp
+  GLPlotDlg.cpp
+  IndexLocationDlg.cpp
+  正在生成代码...
+  GLPlot.vcxproj -> G:\develop\c++Projects\GLPlot\Debug\GLPlot.exe

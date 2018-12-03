@@ -1,0 +1,4 @@
+﻿  firework.cpp
+g:\develop\c++projects\firework\firework\firework.cpp(91): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  firework.vcxproj -> G:\develop\c++Projects\firework\x64\Debug\firework.exe
+  firework.vcxproj -> G:\develop\c++Projects\firework\x64\Debug\firework.pdb (Full PDB)

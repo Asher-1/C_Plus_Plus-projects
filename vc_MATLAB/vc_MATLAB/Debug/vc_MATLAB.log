@@ -1,0 +1,17 @@
+﻿  vc_MATLAB.cpp
+c:\develop\opencv\build\include\opencv2\core\mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\develop\opencv\build\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\develop\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\develop\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _mxGetPr，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _mxDestroyArray，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _mxCreateDoubleMatrix_730，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _engEvalString，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _engOpen，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _engClose，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+vc_MATLAB.obj : error LNK2019: 无法解析的外部符号 _engPutVariable，该符号在函数 "void __cdecl Opencv_Matlab_C(void)" (?Opencv_Matlab_C@@YAXXZ) 中被引用
+G:\develop\MATLAB2014a\extern\lib\win64\microsoft\libeng.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+G:\develop\MATLAB2014a\extern\lib\win64\microsoft\libmat.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+G:\develop\MATLAB2014a\extern\lib\win64\microsoft\libmex.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+G:\develop\MATLAB2014a\extern\lib\win64\microsoft\libmx.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+G:\develop\c++Projects\vc_MATLAB\Debug\vc_MATLAB.exe : fatal error LNK1120: 7 个无法解析的外部命令

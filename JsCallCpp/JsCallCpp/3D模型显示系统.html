@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D模型显示系统</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            font-family: Monospace;
+            background-color: #000000;
+            margin: 0px;
+            overflow: hidden;
+        }
+        #info {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display:block;
+        }
+        a { color: skyblue }
+        .button { background:#999; color:#eee; padding:0.2em 0.5em; cursor:pointer }
+        .highlight { background:orange; color:#fff; }
+        span {
+            display: inline-block;
+            width: 60px;
+            float: left;
+            text-align: center;
+        }
+    </style>
+    <script src="js/Tween.js"></script>
+</head>
+<body>
+<div id="info">
+
+
+    <p style="color:red; font-size:40px; font-weight:bolder;
+    font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:blink;">3D模型显示系统</p><br/>
+
+    <!--读取STL文件按钮-->
+    <p id="process_info"></p>
+    <button type="button" onclick="ShowMessageBox()">MessageBox</button>
+    <button type="button" onclick="GetProcessID()">Process ID</button>
+
+    <a href="mailto:1224481287@qq.com" target="_blank">Email</a> -
+    STL loader test by <a href="https://user.qzone.qq.com/1224481287/infocenter?ptsig=HRsdPiw7X0Ju7*AKxlpY2C9v6um9MKVTB*tID0leJUk_" target="_blank">陆大海</a>
+</div>
+
+    <script src="js/three.js"></script>
+
+    <script src="js/controls/TrackballControls.js"></script>
+
+    <script src="js/loaders/STLLoader.js"></script>
+
+    <script src="js/Detector.js"></script>
+
+    <script src="js/libs/stats.min.js"></script>
+
+
+<!--<script src="res/three.js"></script>
+
+<script src="res/TrackballControls.js"></script>
+
+<script src="res/STLLoader.js"></script>
+
+<script src="res/Detector.js"></script>
+
+<script src="res/stats.min.js"></script>-->
+
+<script>
+    if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+    var container, stats;
+    var camera, cameraTarget, scene, renderer;
+
+    init();
+    animate();
+
+    function Load_STL(value) {
+        document.getElementById("process_info").innerText = "本进程ID为：" + value;
+    }
+
+    function ShowMessageBox() {
+        if (cpp_object != null)
+            var mess = (cpp_object.ShowMessageBox("你好，我是Javascript，你是谁？"));
+        //document.getElementById("process_info").innerText = "本进程ID为：" + mess;
+    }
+    function GetProcessID() {
+        if (cpp_object != null) {
+            var id = cpp_object.GetProcessID();
+            document.getElementById("process_info").innerText = "本进程ID为：" + id;
+        }
+    }
+    function SaveCppObject(obj) {
+        cpp_object = obj;
+    }
+    var cpp_object;
+
+
+
+    function init() {
+        // container
+        container = document.createElement( 'div' );
+        document.body.appendChild( container );
+
+        // camera
+        camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.01, 1e10);
+        camera.position.set( 3, 0.15, 3 );
+        cameraTarget = new THREE.Vector3( 0, -0.25, 0 );
+
+        // scene
+        scene = new THREE.Scene();
+        scene.add( camera );
+
+        // renderer
+        renderer = new THREE.WebGLRenderer( { antialias: true } );
+        renderer.setClearColor( 0x72645b );
+
+        //scene.fog = new THREE.Fog( 0x72645b, 2, 15 ); // 雾化效果
+        //renderer.setClearColor( scene.fog.color );
+
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        renderer.gammaInput = true;
+        renderer.gammaOutput = true;
+        //renderer.shadowMap.enabled = true;
+        //renderer.shadowMap.renderReverseSided = false;
+        container.appendChild( renderer.domElement );
+
+        // Lights
+        scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
+        var dirLight = new THREE.DirectionalLight( 0xffaa00,1.5); // 创建方向光，并初始化颜色和密度
+        dirLight.position.set( 200, 200, 1000 ).normalize();
+        camera.add( dirLight );
+        camera.add( dirLight.target );
+
+
+        // 加入旋转、平移、缩放操作
+        controls = new THREE.TrackballControls( camera );
+        controls.rotateSpeed = 5.0;
+        controls.zoomSpeed = 0.05;
+        controls.panSpeed = 0.5;
+
+        controls.noZoom = false;
+        controls.noPan = false;
+
+        controls.staticMoving = false;
+        controls.dynamicDampingFactor = 0.3;// 惯性大小设置
+
+        // Ground
+//        var plane = new THREE.Mesh(
+//                new THREE.PlaneBufferGeometry( 40, 40 ),
+//                new THREE.MeshPhongMaterial( { color: 0x999999, specular: 0x101010 } )
+//        );
+//        plane.rotation.x = -Math.PI/2;
+//        plane.position.y = -0.5;
+//        scene.add( plane );
+//        plane.receiveShadow = true;
+
+        // ASCII file
+        var loader = new THREE.STLLoader();
+        loader.load( './models/stl/ascii/陀螺魔方.stl', function ( geometry ) {
+
+            geometry.computeVertexNormals();
+            geometry.center();
+
+            var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
+            var mesh = new THREE.Mesh( geometry, material );
+
+            mesh.position.set( 0, - 0.25, 0.6 );
+            mesh.scale.multiplyScalar( 0.01 );
+
+            scene.add( mesh );
+        } );
+
+        // Binary files
+        var material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
+
+        loader.load( './models/stl/binary/胡巴.stl', function ( geometry ) {
+
+            geometry.computeVertexNormals();
+            geometry.center();
+
+            var mesh = new THREE.Mesh( geometry, material );
+
+            mesh.position.set( 0, - 0.37, - 0.6 );
+            mesh.scale.multiplyScalar( 0.01 );
+
+            scene.add( mesh );
+        } );
+
+        // stats
+        stats = new Stats();
+        container.appendChild( stats.dom );
+
+        // 添加窗口监听器
+        window.addEventListener( 'resize', onWindowResize, false );
+    }
+
+
+    function onWindowResize() {
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+        controls.handleResize(); // 响应鼠标操作，实现鼠标左键拖动旋转，滑轮缩放，鼠标右键拖动平移操作功能
+    }
+
+
+    function animate() {
+        renderer.render( scene, camera );
+
+        controls.update();
+        stats.update();
+
+        requestAnimationFrame( animate );
+    }
+
+
+    // 暂时弃用
+    function render() {
+        var timer = Date.now() * 0.0005;
+        camera.position.x = Math.cos( timer ) * 3;
+        camera.position.z = Math.sin( timer ) * 3;
+        camera.lookAt( cameraTarget );
+        renderer.render( scene, camera );
+    }
+	
+</script>
+</body>
+</html>

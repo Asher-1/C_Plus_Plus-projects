@@ -1,0 +1,871 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EastDraw.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""l.chs\\afxdb.rc""           // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EastDraw.ico"
+IDR_EASTDRTYPE          ICON    DISCARDABLE     "res\\EastDrawDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TOOLBAR1_DrawTool   BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDB_BITMAP_Black        BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_BITMAP_White        BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+IDB_BITMAP_Dark_Gray    BITMAP  DISCARDABLE     "res\\bitmap_d.bmp"
+IDB_BITMAP_Light_Gray   BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_BITMAP_Dark_Red     BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+IDB_BITMAP_Red          BITMAP  DISCARDABLE     "res\\bmp00008.bmp"
+IDB_BITMAP_DarkYellow   BITMAP  DISCARDABLE     "res\\bmp00009.bmp"
+IDB_BITMAP_Yellow       BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP_DarkGreen    BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+IDB_BITMAP_Green        BITMAP  DISCARDABLE     "res\\bitmap4.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
+IDB_BITMAP_DarkBlue     BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+IDB_BITMAP_Blue         BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\bitmap9.bmp"
+IDB_BITMAP10            BITMAP  DISCARDABLE     "res\\bitmap10.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bmp00010.bmp"
+IDB_BITMAP_Start        BITMAP  DISCARDABLE     "res\\Start.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  25, 24
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVE_AS_Bmp
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_BUTTON32830_Lock
+    BUTTON      ID_MENUITEM32794_SetRegin
+    BUTTON      ID_BUTTON32850_ReDraw
+    BUTTON      ID_MouseCap_On
+    SEPARATOR
+    BUTTON      ID_ShowDrawTool_Bar
+    BUTTON      Menu_ShowPorDlg
+    BUTTON      ID_BUTTON32845_Axis
+    SEPARATOR
+    BUTTON      ID_BUTTON32858_OnDo
+    BUTTON      ID_BUTTON32859_ReDo
+END
+
+IDR_TOOLBAR1_DrawTool TOOLBAR DISCARDABLE  25, 24
+BEGIN
+    BUTTON      ID_BUTTON_DLine
+    BUTTON      ID_BUTTON32776_Rectangle
+    BUTTON      ID_BUTTON32778_RoundRectangle
+    BUTTON      ID_BUTTON32791_Polygon
+    BUTTON      ID_BUTTON32779_Ellipse
+    BUTTON      ID_BUTTON32780_Round
+    BUTTON      ID_BUTTON32777_Curve
+    BUTTON      ID_BUTTON_LiEllipse
+    BUTTON      ID_BUTTON32800_RoundArc
+    BUTTON      ID_BUTTON32805_EllipseArc
+    BUTTON      ID_BUTTON32807_PolyBezier
+    BUTTON      ID_BUTTON32809_Text
+    SEPARATOR
+    BUTTON      ID_BUTTON32774_Move
+    SEPARATOR
+    BUTTON      ID_BUTTON32856_DONothing
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 EastDraw(&A)...",        ID_APP_ABOUT
+    END
+END
+
+IDR_EASTDRTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)\tCtrl+C",            ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)\tCtrl+A",          ID_FILE_SAVE_AS
+        MENUITEM "另存为位图文件(&B)\tCtrl+B",  ID_FILE_SAVE_AS_Bmp
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "设置绘图区域(&W)\tCtrl+W",    ID_MENUITEM32794_SetRegin
+        MENUITEM "清洁绘图区(&C)\tCtrl+E",      ID_BUTTON32850_ReDraw
+        MENUITEM "锁定图元属性(&L)\tCtrl+L",    ID_BUTTON32830_Lock
+        MENUITEM "清除操作(&U)\tCtrl+U",        ID_BUTTON32858_OnDo
+        MENUITEM "恢复操作(&R)\tCtrl+R",        ID_BUTTON32859_ReDo
+        MENUITEM "鼠标捕捉(&M)\tCtrl+M",        ID_MouseCap_On
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "属性框(&P)",                  Menu_ShowPorDlg
+        MENUITEM "显示坐标(&A)",                ID_BUTTON32845_Axis
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "系统工具栏(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "绘图工具栏(&H)",              ID_ShowDrawTool_Bar
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 EastDraw(&A)...",        ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_TextEdit MENU DISCARDABLE 
+BEGIN
+    POPUP "TextEdit"
+    BEGIN
+        MENUITEM "撤消(&U)",                    ID_UnDo
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)",                    ID_Cut
+        MENUITEM "复制(&C)",                    ID_Copy
+        MENUITEM "粘贴(&P)",                    ID_Past
+        MENUITEM "删除(&D)",                    ID_Delete
+        MENUITEM SEPARATOR
+        MENUITEM "全选(&A)",                    ID_SelectAll
+        MENUITEM SEPARATOR
+        MENUITEM "移动编辑框(&M)",              ID_Move
+        MENUITEM "设置编辑框大小(&S)",          ID_MENUITEM_Size
+    END
+END
+
+IDR_MENU_Canvas_Edit MENU DISCARDABLE 
+BEGIN
+    POPUP "Canvas_Edit"
+    BEGIN
+        MENUITEM "旋转",                        ID_CirCu
+    END
+END
+
+IDR_MENU_OK MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "确定",                        ID_MENUITEM_OK
+    END
+END
+
+IDR_MENU_Delete MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "删除",                        ID_Delete
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_ACCEL32877,          VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 257, 209
+STYLE DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 10, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    CONTROL         176,IDC_STATIC,"Static",SS_BITMAP,-1,1,257,209
+END
+
+IDD_PROPPAGE_DLine1 DIALOGEX 0, 0, 202, 128
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "风格设定"
+FONT 8, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "画笔",IDC_STATIC,3,0,70,102
+    CONTROL         "SOLID   ",IDC_RADIO_Ps_Solid,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,6,11,45,14
+    CONTROL         "DASH",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,6,25,32,10
+    CONTROL         "DOT",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,6,35,28,10
+    CONTROL         "DASHDOT",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,6,45,44,
+                    10
+    CONTROL         "DASHDOTDOT",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,6,55,
+                    62,8
+    CONTROL         "NULL",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,6,63,32,
+                    10
+    CONTROL         "INSIDEFRAME   ",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON,
+                    6,73,61,10
+    CONTROL         "",IDC_STATIC_ShowPenStyle,"Static",SS_BLACKFRAME,6,85,
+                    64,12
+    GROUPBOX        "笔宽",IDC_STATIC,11,103,53,24
+    EDITTEXT        IDC_EDIT_LineWidth,15,113,47,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DDLineWidth,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,54,115,11,13
+    GROUPBOX        "画刷",IDC_STATIC,76,0,120,102
+    CONTROL         "HOLLOW",IDC_RADIO6_bs_hollow,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,80,13,52,8
+    CONTROL         "SOLID",IDC_RADIO7_bs_solid,"Button",BS_AUTORADIOBUTTON,
+                    138,12,48,8
+    CONTROL         "HATCHED",IDC_RADIO8_hatched,"Button",BS_AUTORADIOBUTTON,
+                    80,22,56,8
+    GROUPBOX        "填充阴影",IDC_STATIC,80,31,65,65
+    CONTROL         "BDIAGONAL",IDC_RADIO9_HS_BDIAGONAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,81,42,58,8
+    CONTROL         "DIAGCROSS",IDC_RADIO11_HS_DIAGCROSS,"Button",
+                    BS_AUTORADIOBUTTON,81,52,57,8
+    CONTROL         "FDIAGONAL",IDC_RADIO13_HS_FDIAGONAL,"Button",
+                    BS_AUTORADIOBUTTON,81,61,58,8
+    CONTROL         "CROSS",IDC_RADIO10_HS_CROSS,"Button",BS_AUTORADIOBUTTON,
+                    81,69,43,8
+    CONTROL         "HORIZONTAL",IDC_RADIO14_HS_HORIZONTAL,"Button",
+                    BS_AUTORADIOBUTTON,81,77,61,8
+    CONTROL         "VERTICAL",IDC_RADIO_HS_VERTICAL,"Button",
+                    BS_AUTORADIOBUTTON,81,86,53,8
+    CONTROL         "",IDC_STATIC_ShowBrushResult,"Static",SS_BLACKFRAME,147,
+                    35,45,60
+    COMBOBOX        IDC_COMBO_BackgroundMode,98,113,79,37,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "背景模式",IDC_STATIC,93,103,85,25
+END
+
+IDD_PROPPAGE_DLine2 DIALOGEX 0, 0, 204, 126
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "颜色设定"
+FONT 8, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         137,IDC_STATIC_Black,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,3,3,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         141,IDC_STATIC_RarkRed,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,3,60,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         145,IDC_STATIC_DrakGreen,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,25,41,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         143,IDC_STATIC_DarkYellow,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,45,41,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         149,IDC_STATIC_DrakBlue,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,3,22,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         144,IDC_STATIC_Yellow,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,65,41,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         139,IDC_STATIC_DarkGray,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,25,3,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         140,IDC_STATIC_LightRray,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,45,3,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         138,IDC_STATIC_White,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,65,3,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         142,IDC_STATIC_Red,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,65,60,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         150,IDC_STATIC_Blue,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,25,22,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         147,IDC_STATIC_BITMAP5,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,3,41,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         146,IDC_STATIC_Green,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,45,22,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         148,IDC_STATIC_BITMAP6,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,65,22,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         151,IDC_STATIC_BITMAP9,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,25,60,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         152,IDC_STATIC_BITMAP10,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,45,60,15,14,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_Red,177,14,18,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         142,IDC_STATIC_Red2,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,90,14,9,8,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CONTROL         146,IDC_STATIC_Green2,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,90,33,9,8,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_Green,177,32,18,13,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         150,IDC_STATIC_Blue2,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,90,54,9,8,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_Blue,177,53,19,12,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_ACCEPTFILES
+    CONTROL         "Spin1",IDC_SPIN_Red,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE,196,10,8,14
+    CONTROL         "Spin2",IDC_SPIN_Green,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE,195,30,8,14
+    CONTROL         "Spin3",IDC_SPIN_Blue,"msctls_updown32",UDS_ARROWKEYS | 
+                    NOT WS_VISIBLE,194,55,8,14
+    CONTROL         "Slider1",IDC_SLIDER_Red,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,96,13,80,16
+    CONTROL         "Slider2",IDC_SLIDER_Green,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,96,30,80,16
+    CONTROL         "Slider3",IDC_SLIDER_Blue,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,96,51,80,16
+    CONTROL         "",IDC_STATIC_ShowColor,"Static",SS_GRAYFRAME | 
+                    SS_SUNKEN | WS_BORDER,3,76,77,27,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "RGB",IDC_STATIC,87,0,110,73
+    PUSHBUTTON      "拾取",IDC_BUTTON_Select,91,79,36,19,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "调色板",IDC_BUTTON_ColorDlg,145,79,36,19,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "画笔",IDC_CHECK_Pen,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,111,29,12
+    CONTROL         "画刷",IDC_CHECK_Brush,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,111,27,10
+    CONTROL         "背景",IDC_CHECK_Background,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,144,111,29,10
+    CONTROL         "",IDC_ShowPenColor,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_BORDER,40,104,20,19,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_ShowBrushColor,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_BORDER,109,103,20,20,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_ShowBackground,"Static",SS_BLACKFRAME | SS_SUNKEN | 
+                    WS_BORDER,180,104,20,20,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_PROPPAGE_Mode DIALOGEX 0, 0, 202, 127
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "模式设定"
+FONT 8, "宋体", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_BackgroundMode,111,103,79,37,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",IDC_TREE_DrawingMode,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_SHOWSELALWAYS | TVS_TRACKSELECT | WS_BORDER | 
+                    WS_TABSTOP,6,9,92,98
+    GROUPBOX        "背景模式",IDC_STATIC,103,91,92,31
+    EDITTEXT        IDC_EDIT_Detail,107,12,84,71,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN
+    GROUPBOX        "绘图模式",IDC_STATIC,2,0,98,123
+    CONTROL         "打开绘图模式",IDC_CHECK_ModeCheck,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,5,108,88,13
+    GROUPBOX        "描述",IDC_STATIC,101,1,95,87
+END
+
+IDD_DIALOG_ReginSet DIALOGEX 0, 0, 138, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "区域设置"
+FONT 11, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,84,32,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,99,84,32,14,0,WS_EX_STATICEDGE
+    LTEXT           "宽",IDC_STATIC,72,18,10,10
+    EDITTEXT        IDC_EDIT_Width,26,17,32,13,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT | ES_NUMBER
+    LTEXT           "高",IDC_STATIC,11,19,8,9
+    EDITTEXT        IDC_EDIT_Length,86,17,32,13,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT | ES_NUMBER
+    GROUPBOX        "尺寸(单位：像素)",IDC_STATIC,6,4,121,29
+    GROUPBOX        "坐标原点",IDC_STATIC,6,46,121,30
+    LTEXT           "X",IDC_STATIC,11,60,8,8
+    LTEXT           "Y",IDC_STATIC,71,61,8,8
+    EDITTEXT        IDC_EDIT3,25,57,30,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT4,84,56,30,13,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,41,118,1,
+                    WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EastDraw应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EastDraw\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EastDraw.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "EastDraw 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_PROPPAGE_DLine1, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_PROPPAGE_DLine2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        VERTGUIDE, 7
+        VERTGUIDE, 28
+        VERTGUIDE, 47
+        VERTGUIDE, 67
+        VERTGUIDE, 88
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 26
+        HORZGUIDE, 46
+        HORZGUIDE, 66
+    END
+
+    IDD_PROPPAGE_Mode, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DIALOG_ReginSet, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 135
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 97
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE_Mode DLGINIT
+BEGIN
+    IDC_COMBO_BackgroundMode, 0x403, 7, 0
+0xbbb2, 0xb8cd, 0xf7c3, "\000" 
+    IDC_COMBO_BackgroundMode, 0x403, 5, 0
+0xb8cd, 0xf7c3, "\000" 
+    0
+END
+
+IDD_PROPPAGE_DLine1 DLGINIT
+BEGIN
+    IDC_COMBO_BackgroundMode, 0x403, 7, 0
+0xbbb2, 0xb8cd, 0xf7c3, "\000" 
+    IDC_COMBO_BackgroundMode, 0x403, 5, 0
+0xb8cd, 0xf7c3, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+ID_Draw                 CURSOR  DISCARDABLE     "res\\id_draw.cur"
+ID_Change               CURSOR  DISCARDABLE     "res\\id_chang.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "EastDraw"
+    IDR_EASTDRTYPE          "\nEastDr\nEastDraw\nEastDraw 文件 (*.ed)\n.ed\nEastDraw.Document\nEastDraw Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "EastDraw"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+    ID_MousPoint            "ID_MousPoint"
+    ID_MousCaption          "逻辑坐标"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "\n保存为矢量格式"
+    ID_FILE_SAVE_AS         "\n另存为BMP位图"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ShowDrawTool_Bar     "\n绘图工具栏"
+    ID_BUTTON32830_Lock     "\n锁定图元属性"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32834          "\n设置绘图区域大小"
+    ID_BUTTON32845_Axis     "\n坐标"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    Menu_ShowPorDlg         "\n属性框"
+    ID_MENUITEM32794_SetRegin "\n设置绘图区域"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32850_ReDraw   "\n清洁绘图区"
+    ID_BUTTON32856_DONothing "\n无操作状态"
+    ID_BUTTON32858_OnDo     "\n清除操作"
+    ID_BUTTON32859_ReDo     "\n恢复操作"
+    ID_FILE_SAVE_AS_Bmp     "\n另存为位图文件"
+    ID_MouseCap_On          "\n鼠标捕捉"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_STYLE_BAR           BITMAP  FIXED IMPURE    "res\\style_ba.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_STYLE_BAR TOOLBAR FIXED IMPURE  16, 15
+BEGIN
+    BUTTON      ID_CHAR_BOLD
+    BUTTON      ID_CHAR_ITALIC
+    BUTTON      ID_CHAR_UNDERLINE
+    SEPARATOR
+    BUTTON      IDC_F
+    SEPARATOR
+    BUTTON      IDC_FONT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+Cursor_Move             CURSOR  DISCARDABLE     "res\\cursor_m.cur"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EastDraw.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#include "l.chs\afxdb.rc"           // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

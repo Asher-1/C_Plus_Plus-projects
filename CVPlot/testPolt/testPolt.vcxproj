@@ -42,9 +42,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <ExecutablePath>E:\develop\QTProjects\opencv246\bin;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>E:\develop\QTProjects\opencv246\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\develop\QTProjects\opencv246\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>D:\develop\tools\opencv246\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\develop\tools\opencv246\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\develop\tools\opencv246\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -56,6 +56,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

@@ -1,13 +1,16 @@
 #ifndef _PLOT_H
 #define _PLOT_H
-#include"opencv2/opencv.hpp"
+
+#include "opencv2/opencv.hpp"
 #include <cmath>
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
 #include <vector>
 #include <math.h>
+
 #define WINDOW_WIDTH 600
+
 #define WINDOW_HEIGHT 600
 using namespace cv;
 using namespace std;
